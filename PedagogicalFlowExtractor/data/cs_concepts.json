@@ -1,0 +1,130 @@
+{
+  "_meta": {
+    "description": "Computer Science concepts dictionary for domain-aware extraction",
+    "version": "1.0",
+    "total_concepts": 150
+  },
+
+  "data_structures": [
+    "array", "linked list", "singly linked list", "doubly linked list",
+    "circular linked list", "stack", "queue", "priority queue",
+    "deque", "double ended queue", "tree", "binary tree",
+    "binary search tree", "bst", "avl tree", "red black tree",
+    "b tree", "heap", "min heap", "max heap",
+    "hash table", "hash map", "hash set", "hash function",
+    "graph", "adjacency list", "adjacency matrix",
+    "trie", "segment tree", "fenwick tree", "suffix tree",
+    "disjoint set", "union find", "matrix", "string",
+    "vector", "list", "set", "map", "dictionary",
+    "tuple", "pair", "node", "edge", "vertex",
+    "push", "pop", "enqueue", "dequeue", "peek",
+    "insert", "delete", "traverse", "append"
+  ],
+
+  "algorithms": [
+    "sorting", "bubble sort", "selection sort", "insertion sort",
+    "merge sort", "quick sort", "heap sort", "radix sort",
+    "counting sort", "bucket sort", "searching", "linear search",
+    "binary search", "depth first search", "dfs",
+    "breadth first search", "bfs", "dijkstra",
+    "bellman ford", "floyd warshall", "kruskal",
+    "prim", "topological sort", "dynamic programming",
+    "greedy", "divide and conquer", "backtracking",
+    "recursion", "iteration", "brute force",
+    "sliding window", "two pointer", "hashing"
+  ],
+
+  "programming_fundamentals": [
+    "variable", "data type", "integer", "float", "double",
+    "character", "string", "boolean", "constant",
+    "operator", "arithmetic operator", "logical operator",
+    "relational operator", "bitwise operator",
+    "assignment operator", "conditional", "if else",
+    "switch case", "loop", "for loop", "while loop",
+    "do while loop", "break", "continue", "return",
+    "function", "method", "parameter", "argument",
+    "return type", "void", "main function",
+    "input", "output", "print", "scanf", "cin", "cout",
+    "syntax", "semantics", "compilation", "execution",
+    "debugging", "error", "bug", "exception",
+    "runtime error", "compile time error", "logic error"
+  ],
+
+  "oop_concepts": [
+    "class", "object", "inheritance", "polymorphism",
+    "encapsulation", "abstraction", "constructor",
+    "destructor", "method overloading", "method overriding",
+    "interface", "abstract class", "virtual function",
+    "static", "dynamic", "this pointer", "super",
+    "access modifier", "public", "private", "protected",
+    "getter", "setter", "composition", "aggregation"
+  ],
+
+  "memory_and_pointers": [
+    "pointer", "reference", "null pointer", "dangling pointer",
+    "memory allocation", "dynamic memory", "malloc", "calloc",
+    "free", "new", "delete", "memory leak",
+    "stack memory", "heap memory", "address",
+    "dereference", "pass by value", "pass by reference"
+  ],
+
+  "complexity": [
+    "time complexity", "space complexity", "big o notation",
+    "big o", "o of n", "o of 1", "o of n squared",
+    "o of log n", "o of n log n", "worst case",
+    "best case", "average case", "asymptotic analysis",
+    "amortized analysis"
+  ],
+
+  "database": [
+    "database", "dbms", "rdbms", "sql", "query",
+    "table", "row", "column", "primary key", "foreign key",
+    "normalization", "first normal form", "second normal form",
+    "third normal form", "bcnf", "join", "inner join",
+    "outer join", "left join", "right join", "index",
+    "transaction", "acid", "er diagram", "entity",
+    "relationship", "attribute", "schema", "view",
+    "stored procedure", "trigger", "cursor"
+  ],
+
+  "os_concepts": [
+    "operating system", "process", "thread", "multithreading",
+    "concurrency", "parallelism", "deadlock", "mutex",
+    "semaphore", "scheduling", "round robin", "sjf",
+    "fcfs", "priority scheduling", "context switch",
+    "virtual memory", "paging", "segmentation",
+    "page fault", "thrashing", "file system",
+    "system call", "kernel", "user space"
+  ],
+
+  "networking": [
+    "network", "protocol", "tcp", "udp", "ip",
+    "http", "https", "dns", "dhcp", "arp",
+    "osi model", "tcp ip model", "router", "switch",
+    "firewall", "socket", "port", "bandwidth",
+    "latency", "throughput", "packet", "frame"
+  ],
+
+  "common_aliases": {
+    "array": ["arrays", "arre", "arrey"],
+    "linked list": ["linkedlist", "linked-list", "link list"],
+    "stack": ["stacks", "stak"],
+    "queue": ["queues", "q"],
+    "tree": ["trees"],
+    "graph": ["graphs"],
+    "binary search tree": ["bst"],
+    "depth first search": ["dfs"],
+    "breadth first search": ["bfs"],
+    "dynamic programming": ["dp"],
+    "variable": ["variables", "var"],
+    "function": ["functions", "func"],
+    "pointer": ["pointers"],
+    "recursion": ["recursive"],
+    "iteration": ["iterative"],
+    "loop": ["loops", "looping"],
+    "sorting": ["sort"],
+    "searching": ["search"],
+    "class": ["classes"],
+    "object": ["objects"]
+  }
+}

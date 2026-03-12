@@ -1,0 +1,6585 @@
+{
+  "video_id": "6Aqxv29RGPc",
+  "metadata": {
+    "source_file": "6Aqxv29RGPc.m4a",
+    "language_detected": "en",
+    "model_used": "small",
+    "processed_at": "2026-03-11T22:11:08Z"
+  },
+  "full_text": "In today's video, we are going to talk about the Merge Sort algorithm. And Merge Sort is a simple algorithm in which we break an array in pieces, sort it, break it back into pieces. That is, if I have an array of 7, 8, 22, 81, I have it, so what I will do is, I will break it into pieces until there is one element left in it. And after that, when there is one element left in it, I will merge it again, such that the merged array has these two elements sorted. If you don't understand this, I will first explain the Merge procedure and after that you will get a very clear idea of how Merge Sort works using this Merge procedure. We have two sorted arrays. I will call this sorted array 1, sorted array 1. Here I write sorted array 1. Here I write sorted array 2. Okay? Sorted array 2. Here I consider this as something like this. Here I consider this as I and here I consider this as J and here I consider this as K. Okay? So I is equal to J is equal to K is equal to 0. Okay? I initialized I, J and K in this way. Okay? Now what is here? I have its size M and its size N. Okay? So 1, 2, 3, 4, 5. Okay? I am going to 0 to M. You can consider this as size M. How can you do this? Okay? Now what we have to do is merging. Okay? We have to merge two arrays of something like this in one array. So what I will do? I will compare this with this. I mean I will compare the i element to the j element. Then I will see who is smaller among these two. Which one is smaller? The one is smaller. So 1 will come here. Okay? Now because I chose 1. I will increase K to one step and the one who chooses it will also increase it to one step. So I will increase this J to one step first. Okay? So I will increase this J to one step first and along with that I will increase this K to one step first. Okay? So J is one step ahead and K is also one step ahead. Now what I will do? Where it comes and where it comes, I will compare those two. And I will bring the smallest element among those two to K. Which one is the smallest? The one who is smaller. So I will bring the 6 here and I will increase the J to one step ahead. Absolutely right. What I will do with the J? I will increase it to one step ahead. So J is here. I have increased the J to one step ahead. Okay? And along with that, I will increase the K to one step ahead. Now who will I compare it with? I will compare it with the J and the J elements on the I. Who is the smallest of these two? The smallest of these is 7. So I will write 7 here and I will increase the I. That is, whatever I brought in my new era, I will increase the I because I have brought the element from this era. If I had brought it from here, I would have increased the J. Now both are equal, I and J. So how can you break their tie? Suppose you have brought the I. You increase the I. Okay? I will bring the 9 here. Okay? And I will increase it too. So what do we have to do? We have to increase it. We have to increase it. We have to increase it. And the K will always point at a place where there is an element. Now I will compare the 8 and 9. So 9 will come and the J will be incremented here. Okay? So basically what are we doing? We are writing an emerging procedure here. The truth is that the new era we have created, we will merge them and get the sorted area. Okay? So what will happen here? Which one is smaller? 8 and 11? I have 11 smaller than 8 and 11. Okay? So what will happen here? 11 will come here and J will also increase one step forward. Now when J will increase one step forward, J is not pointing at a place. Okay? So what will I do? I will copy the elements from the remaining elements. 18, 19 and 22. So this is called the merging procedure. What was this? This was the merging procedure. If I tell you what this is, I will tell you the merging procedure. It is useful to merge two arrays. So I will write here merging and procedure. What does this do? Sorted area 1, sorted area 2. It makes a sorted area 3. How did you like the procedure? Let me tell you once again what we did. What we did here? We kept on increasing the i and j and we kept on comparing the i and j elements. And in the kth element, that is, we kept on adding the new array. We compared 7 and 1. We brought one smaller ring, then we compared 6 and 7. We brought 6, then we compared 9 and 7. We brought 7, then we compared 9 and 9, then we brought 9 again. Then we compared 11 and 18. So we are increasing the i and j. And we are increasing the k here and we are also increasing the new array. If I have to write this procedure in code, If someone will ask me to write the code, Then how will I see the code? Let's see. So guys, if I have two arrays, Suppose I have one array and one other array, They have to merge and make a third array. Okay, they have to merge and make a third array. So what will I do? I will take one of these arrays in the third element. Okay, and how will I take it? I will tell you this too. So what will I do here? I will write the procedure. So I will write the merge procedure here. I will write a void merge here. Okay, I will write void. And after that I will write merge. I wrote void merge here. What will it take? It will take an array A. I will consider it as array A, I will consider it as array B. And the one I am merging in, I will consider it as array C. Okay, suppose I have an array, In which I am merging. Okay, so what will I consider it? I will consider it as array C. Okay, I will consider it as array C. So let me do a little work here. Let me make it like this. The rectangle is good. So that we can see C a little better. It should look good too. That is also necessary. So I will consider it as C. Suppose we merge it in this. Something like this, that C is also sorted. So this is sorted. This is also sorted. And we also need this sorted. So we have to do something like merging, that both are sorted. What did we say? We said we will take an i from here. We will consider this as j. And we will consider this as k. And there are elements in this. There are elements in this. You can make it like this. Okay, there are many elements in this. So I wrote something like i, j. So this will take an array A, B, array A. Okay, and C array A. And it will merge it in A and B in C. Okay. And suppose its size M, its size N, its size M plus N will be. Okay. So I will take M and N as an input. Okay. What I will do in this? I will write the code in this. To merge these two. Okay. So I will write it here. Int i, j, k. And i is equal to j is equal to k is equal to 0. So i, j and k are all 0. Okay. Now what will I do? Now I will say that until the time M is over and N is over, until then what will you do? Scan this array. Okay. I will say here while until i is less than M. And i is less than N. What am I doing? i less than M and i less than N. Why am I writing? I am doing this. See, I want to move forward. I want to move forward. I want to move forward. Okay. So I will say here while until I reach the end of the array. So until the time i is less than N. I mean until the time I reach the end. I mean until I reach the end. I mean until I reach the end. Until then I want to increment the i and increment what I want to do? I want to compare here that if ai is less than bj. What will I do? I will write here that the ck comes in ai. Understand that the ai and bj I compared. Suppose here it was 7. Here it was 8. Okay. I will compare 7 and 8. Suppose 7 and 8 is less than ai. Means 7 is less. You can see that this condition is true. So what I will do? The c array is in its k. Means here I will put ai because ai is smaller. So I will put 60 here. Now which one will I move ahead? I will move ahead or the j will move ahead or the i will move ahead. Because I have taken the element of i. So here I will write i++. Will I move ahead your k and move ahead? K++. Okay. So here I will write a bracket too. If you talk about syntax. Otherwise what will I do? Otherwise I will write else. What will you do? Else you will copy bj in ck. if you can't copy the i, you will copy the j if it was 17, then I would copy the 8, and j would go ahead so I would do j++ and k++ I will do j++ and k++ now I have run this while loop and how long will it keep running? it will keep running until I reach here if you have one array, its size is 2 its size is 2, and you have one more array its size is 3 and this is here and j is here so what you will do? you will want the remaining elements to be copied because you have finished one array so this is 7, and this is 1, and this is 22 in fact I will do 18, 22, 22 so if this is 18, 22, 22, and this is 7, and 11, then you will copy the elements and once 7 and 11 are copied then what will happen? that this array will remain the same so now I don't need to check it I can copy it in a new array because 7, 11 are copied and this array is sorted and only the elements are saved so if I can copy them in the same way then what will I do here? I will write one more while loop if the remaining elements are saved then copy all the elements of the array or copy all the elements of the array if one of these elements is saved then it will be over you know who is who you have taken this element, this one, this one, this one this one too so this is saved and this is saved so I will copy all the remaining elements of this array obviously I will copy them and the size of this array is a little bit more because these are big arrays so I didn't make the size of this array you should note that there will be more elements in this array so the arrays A, B and C will copy the merge procedure A and B in C so I have just written I and J I have written I and J and I am equal to 1 or the J I have written I was wrong J less than N okay, I have to do this and once I have done this what I will do finally I or J will be over then this will be the Y loop listen to me again because I and J will be over and then I will copy all the remaining elements as it is okay, so what I will do for that I will write a while loop I will write it like this I will make some space here and here I will write a while loop I will write while like this and after writing I will write here that I is less than M what to do keep copying the elements okay, keep copying the elements CK is equal to what to do CK is equal to A I K++ and I plus plus okay I will close it here so what I am saying here all the elements copy the previous elements but the previous element is less than M and similarly I will do another while loop J less than N and what I will write in it CK is equal to BJ and I will write J++ and I will explain this one more time because I will not explain it once what I did here what I did here is I will give you one more example I have 7, 8 and 12 and 1, 2 and 11 I have to merge them and make a new area so what I will do first I will compare this and this I will write one in the small content then I will toss it then I will compare 2 and 7 because there are 2 then what I will do I will give 7 and 11 because 7 is small then I will compare 8 and 11 8 will come and this will be combined then I will take 11 and I will combine it and now because there are 12 left I will copy it as is so this while loop is also working what is this while loop copy all remaining elements copy all remaining elements from A to C and what is this copy from B to C I am saying this with this while loop or if there are B elements left then copy all the elements in C and if there are A elements left then copy all the elements in C as it is so I have shown you this example now I will show you another example I will quickly erase this and after that I will show you another example and in that example what I will do is I will take some small elements like 2, 4 and 5 and here I will take 40, 50 and let us say 80 so we will compare this and this obviously 2 is small so 2 will come and if we do 4 and 4 will come 5 and 4 will come and 5 will come now because this error is over so what will happen is our I value will fall less than M condition will fall less than M condition so I will copy all J elements as it is so I will write 40, 50, 80 so these while loops are doing this if there are A elements left then this while loop is copying I hope you understood the merging procedure now what we will do is we have written the merging procedure you understood this very well I know that now I will tell you if you want to merge in one array then how will you do it you have merged in one array what is this so I will tell you the merging in one array so guys now let us see merging in a single array and for that I will do whatever I made here and in fact I will delete the other array so I will delete it here so I will select it and delete it here and you guys only how I will tell you how to merge in one array so I will enlarge it a little and bring it down and I will delete it suppose I have a single array and this single array has some elements that is 7, 15 so 18 and then 22 and 80 this is a sorted array now this is a sorted array so I don't need to sort it out more but suppose I have two different sorted arrays that is I have 7, 15 is a sorted array and after that I have a sorted array from here that is in one array I have two sorted arrays I will write it here 2, 8 and 10 so this is a sorted array and this is a sorted array and I want to merge them in a new array so how I will do it you will see here to merge in a new array I will write that what is my merge procedure I want to make changes in the same array or make an auxiliary array now I can't make changes in the same array I will make changes in an auxiliary array that is I will make another array here so I will make another array here and this array I will keep it here and I want to merge these two arrays and take it in this array so let's see how it will work the first thing is I should know how much my elements are sorted so I know that 0, 1, 2, 3, 4 0, 1, 2, 3, 4 0, 1, 2, 3, 4 are given here I know that 0, 1 is sorted, 2, 3, 4 are sorted so I will make this array ok I will make this array high ok and here I will draw a line that these two are sorted so I will draw a line here and I will make this array mid ok and now I want to write a procedure that I want to write that will merge these two basically I want to write a merging procedure these two sorted arrays I want to merge them in one single array so first I was merging A and B in C now what I am doing one part and one part I am merging them in B and I will consider it as A so how will things change here I don't have C yet, I don't have B I have A and what I have got I have got mid, low and high ok A and mid, low and high ok I have got this A and mid, I will erase it I have shown you this by merging A and mid, low and high ok let's zoom in here to understand A, mid, low I will write low here and high I have got mid, high and low and A I have got now what I will do here I, J and K will make it like this I will initialize it from low ok, I will initialize it from low J will do it J will do it from mid ok, J here I am doing but I will not do J from mid I want this array here J, so mid plus 1 and the value of K here will be equal to low K so K is equal to low I will write the initializing conditions here I will write them here quickly and what I will do here first I will write that the value of I will be equal to low so I will write I is equal to low after that I will write J is equal to mid plus 1 ok and K is equal to low so I, J and K I have initialized now here we were saying I is less than mid now what we will say I is less than mid ok, I less than we were saying M now we will say I is less than mid so I I will make it mid and J is less than what will happen? J is less than high ok, so what I have written here I will make it high so I will make it high because I want to start from here I want to start from here and I want to start from here and I want to increase it to here I want to increase it to here and start from here and I want to increase it to here ok, so K will go to the end ok, so what I will do now that I, J, K I have written now I have written while I, I less than B, J I am not comparing with B, J I am comparing with A, J so I will write I is less than A, J here I is less than A, J ok, I write I is less than A, J here and along with that I will write Ck is equal to A i I will write Bk is equal to A i ok, I will put it in B so I will write Bk is equal to A i so I will write Ck is equal to A i Bk is equal to A i and everything else will be ok same will be I plus, plus, K plus, plus and here also same will change Bk is equal to A i I am putting it in A, BK is equal to AI, BK is equal to AIE, and here BK is equal to AJ. So here you understand what the change is because I am comparing it in this area and putting it in the other area. So I will write something like this, BK is equal to AJ. And I did J++ and K++. I think it is still right. If I talk about the changes below, then where was my while loop going? Where was it going? Earlier it was going to M, now where will it go? Now it will go to mid. Okay, I will go until it goes to mid and it will be less than equal to mid because I am taking the value of mid. Okay, less than equal to mid. So I will take it as I is less than equal to mid and I will erase it here and write I is less than equal to mid. Why am I writing I is less than equal to mid? That is why I am writing. Because if this array is over, then I will copy it as is in the lower array. So I will keep copying until it goes to mid. If you believe me, all these elements have come here, so I will copy 7 and 15 as is mid. And if I want to run mid with 0, then I will write I is less than equal to mid. Or wherever I have come from, then I will run mid with 0. And here I will write J is less than equal to high. So J is less than equal to, here I will write high. So I will make it as is and write high here. And here the CK is equal to AI, this time it will be, what is this? I will copy it in B, so it will be BK first and BK is equal to AI. Everything else will remain the same, so here it will be BK. So I have changed the same procedure such that I am dividing one array in two parts, in low, mid and high. And I am merging it into a new array. So this is our merge procedure. So this is our merge procedure. I hope you have understood the merge procedure. And as soon as I do this work, I will do this work. I want to copy these elements back into this. I want to copy all the elements of BK back into A. What will I do for that? I will write a for loop for that, I will write a very simple for loop. And I will write the for loop as I will write. I will write the for loop here. I will make some space here and I will write the for loop here. So I will write for loop here. I will write for. I will start i is equal to L and I will go from i less than equal to h. And I will write i plus plus. And I will write this in one line due to lack of space. I will write i is equal to bj. And all these elements will copy BK elements into A. That's all I will write here. By the way, this is the same column. And I hope you have understood. I will give you an example of one of these. You know I have 7, 8, 11. And I have 1, 2, 3. And these are the same elements. And here I will write partition n. So what I will do is, I will merge this and this and copy it in the same area. So first I will make a new array. I will copy 7 and 1 and 1 will come. 1 is considered. Now I will copy 7 and 2. Then I will copy 3 and 7. Now I will copy 7, 8 and 11. One loop will go from this loop. In fact, first one will go and 7, 8 and 11 will be copied. Then where will this whole thing be copied? This whole thing will be copied by itself. So I got merged array which is sorted. So this is merged sorted array. Merged sorted array. So I got merged sorted array. So I have merged it. And along with that, I have made a merged sorted array. So it was very easy. We had one array. We have given low, mid and high. What we have to do with the same array? We have to merge the same array where our low, mid and high are. Given that the new array is sorted. Given that the elements are sorted in the array from low to mid and from mid plus 1 to high. This is the condition. You can do this until the condition meets. So I hope you have understood this. But you must be thinking what is the merge sort algorithm? I did not understand the merge sort algorithm. So let me tell you the merge sort algorithm. Merge sort is a very simple algorithm. We have to use merging in this. Once you have an array, Suppose you have an array like this. 7, 11, 20 and 21. So you will say, sort these two. So you will break it into two. 7, 11 and 20. Then you will break it into two. This will break into 7 and 11. You will merge 7 and 11 again. So this is 7 and 11 is sorted already. So this is already sorted. So how will 7 and 11 be like this? Then there are 20 and 20 sorted. So 20 and 20 will be like this. In fact, I have taken an example of sorted array. If I keep an example of a sorted array in front of you. Then it will be like this. 1, 7, 6, 5. So what will happen? In fact, I will do 11, 7, 6, 5. This will break into two. 11, 7 and 6, 5. Then 11, 7 will break into two. 11 and 7. So when 11 and 7 will merge, then 7 and 11 will be like this. And when 6 and 5 will merge, then 5 and 6 will be like this. Then when 5, 6 and 7 and 11 will merge, then 5, 6, 7 and 11 will be like this. So this will be sorted. So I will delete this. I will give you a lack of space. And after deleting this, what will I do here? I will show you how it will be a procedure. Merge sort. So you understood the procedure of merging. We will have an array, we will have a mid, low, high. Now you are thinking that we have not made B here. So we will have to make B here. We will have to make B here. And what will be the size of B? It will be the size of high plus 1. So the size of B will be equal to high plus 1. So I will write here, int B high plus 1. So I have written B here equal to high plus 1. So this is our whole merging procedure. Now let's see how to work with merge sort. So here what I am going to tell you about algorithm is rigorous merge sort. So I will clear a little space here. And after clearing a little space, I will tell you how this works. Recursive merge sort. So we will see recursive merge sort here. And we will see how it works. So I will put a heading here first. Recursive merge sort. Recursive merge sort. Recursive merge sort will do something like this. That is, I will write void ms. This is ms. This is ms. This is ms. This is merge sort ms. Int a. And after this, we will write int low and int high. So this will take a lower high. From where to where do you want to sort? If low is less than high, then what will we do? Then we will enter here. And we will write here, mid is equal to low plus high divided by 2. We will put brackets here. And what will we do? We will run this merge sort again. And we will do a low and mid. And after that, what will we do here? We will run the same thing. We will run merge sort. a mid plus 1 and high. Mid plus 1 and high. And after that, what will we do? We will write that the merge procedure that we have written is low, mid and high. Do you understand what we have done here? If you don't understand, I will tell you again. What have we done here? We said that if you have this array, then this is an array. I will take a new array. There will be no sorted in this. What will I do? I will break it. I will take this low and take this high. In fact, I have to write this as L. I will take this high and take this low and high. And after that, what will I do? The mid of this will be low plus high by 2. What will be my low? 0, 1, 2, 3. What is 0 plus 3 by 2? If you speak in C language, then it will be 1.5, not 1. So my mid will come here. So it will break like this. And mid will come here. I will write mid here. And once my mid comes here, then what will I do? Mid is equal to low plus high by 2. And mid is equal to low plus high by 2. If my mid comes here, then I will run merge sort for a lower mid. I will say do the same thing for this too. Do the same thing for this too. I mean, go and merge sort this too. merge sort this too. So what will happen if you do merge sort in 7 and 1? What will be the value of mid? The value of mid will be low plus high by 2, 0 plus 1 by 2. That is, mid will also be 0. And this time, when you run for lower mid, then it will be 0, 0. That is, merge sort a, 0, 0 will be run. So what will happen here? When you run merge sort for 7 and 1, then what will happen? So 7 and 1 will be 7 and 1. So 7 and 1, 7 and 1 will come like this. And when you run merge sort, then merge sort, then merge sort, then merge sort, and merge sort. Similarly, here also, merge sort will come. And merge sort will come. So merge sort will come. So basically, what we are doing here, we are writing here first, a condition that if low is less than high, that is, you run it till then, if low is less than high, then it will return like this. If low is less than high, that is, if you run for 0, 0, then it will not do anything. Because 7 is sorted by itself. Even 1 is sorted by itself. So low and high should be such that low is less than high. It will not go right. Low should be less than high. So we will do sorting, otherwise we will not do anything. And once 7 and 1 are broken, that is, 7 and 1 are different, then we will merge 7 and 1. Here, look, we are merging at the end. And what are we merging? We are merging in the way that we do everything in A. I have told you the merge procedure here. So I have merged sort for A low and mid. And A mid plus 1 for high. That is, A for low and mid. Or for these two, for this part, or this part. Then I will do the same for this part. And I have told you to merge these two. I have told you to merge here and here. And merge whatever is coming down here. So merge it again. So merge it, merge it and merge it. So what will happen here? merge it, merge it. These two will merge. But it will still merge. It will not stop. It will merge, merge it. After this, it will merge. So you must do this once dry run. And when we write the code, then we will see this once again and we will see it once again. We will see it dry run. And we will understand it properly. Now this merge procedure and recursive merge sort function should be understood by you. And if you understand this, then according to me, when you write the code, then you will get very clear things. Okay. If you have not cleared the merge sort, then you wait for the code. As soon as I upload the code, I will clear the things crystal. Crystal will be cleared. But you must understand the merge. There is nothing in the merge sort. There is a big area, it has two pieces of it. Suppose it is of eight sizes. You have cut it in four pieces. Then you have cut it in two pieces. Then you have cut it in one piece. Okay. You have cut it in one piece. This merge is done. This merge is done. Then these two merge. Then it will merge from below. Then these two merge again. Okay. I hope you understand this. You must try to code it yourself. And see how the intermediate merge arrays are showing. If you do this, then you have a good idea of how the merge sort works. Once I do a revision of the merge procedure, then what you did is, you knew the arrays sorted from low and mid. And you knew the arrays sorted from mid plus one and high. So you made these arrays a new array of merge. And you copied all the new arrays in the same array. You did this much. You didn't do much. After that, you did a recursive merge sort in a new array. And it is not necessary that this is A. Don't confuse them with the name of A. This is also A. Don't confuse them like this. I will change its name. I will make it an R. Or I will do something called X. Okay. X. I will make it X. So that you don't confuse this one and this one. I will make it X. I will make it X again. X. I hope this is clear to you. When we write the code, things will be more clear to you. If you haven't yet accessed the data structure algorithm yet, then do it. And bookmark the playlist. And also, you can see the other algorithms. I have already covered the bubbles, insertions, selections and quicksort. And also, the criteria for sorting algorithm analysis. I have covered this. So I hope you have understood this. Thank you so much for watching this video. And I will see you next time. Bye.",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 3.52,
+      "text": "In today's video, we are going to talk about the Merge Sort algorithm.",
+      "timestamp_label": "0:00"
+    },
+    {
+      "id": 1,
+      "start": 3.52,
+      "end": 8.8,
+      "text": "And Merge Sort is a simple algorithm in which we break an array in pieces,",
+      "timestamp_label": "0:03"
+    },
+    {
+      "id": 2,
+      "start": 8.8,
+      "end": 10.56,
+      "text": "sort it, break it back into pieces.",
+      "timestamp_label": "0:08"
+    },
+    {
+      "id": 3,
+      "start": 10.56,
+      "end": 14.76,
+      "text": "That is, if I have an array of 7, 8, 22, 81,",
+      "timestamp_label": "0:10"
+    },
+    {
+      "id": 4,
+      "start": 14.76,
+      "end": 19.12,
+      "text": "I have it, so what I will do is, I will break it into pieces",
+      "timestamp_label": "0:14"
+    },
+    {
+      "id": 5,
+      "start": 19.12,
+      "end": 21.2,
+      "text": "until there is one element left in it.",
+      "timestamp_label": "0:19"
+    },
+    {
+      "id": 6,
+      "start": 21.2,
+      "end": 23.2,
+      "text": "And after that, when there is one element left in it,",
+      "timestamp_label": "0:21"
+    },
+    {
+      "id": 7,
+      "start": 23.2,
+      "end": 29.68,
+      "text": "I will merge it again, such that the merged array has these two elements sorted.",
+      "timestamp_label": "0:23"
+    },
+    {
+      "id": 8,
+      "start": 29.68,
+      "end": 33.4,
+      "text": "If you don't understand this, I will first explain the Merge procedure",
+      "timestamp_label": "0:29"
+    },
+    {
+      "id": 9,
+      "start": 33.4,
+      "end": 39.76,
+      "text": "and after that you will get a very clear idea of how Merge Sort works using this Merge procedure.",
+      "timestamp_label": "0:33"
+    },
+    {
+      "id": 10,
+      "start": 39.76,
+      "end": 41.52,
+      "text": "We have two sorted arrays.",
+      "timestamp_label": "0:39"
+    },
+    {
+      "id": 11,
+      "start": 41.52,
+      "end": 45.68,
+      "text": "I will call this sorted array 1, sorted array 1.",
+      "timestamp_label": "0:41"
+    },
+    {
+      "id": 12,
+      "start": 45.68,
+      "end": 48.96,
+      "text": "Here I write sorted array 1.",
+      "timestamp_label": "0:45"
+    },
+    {
+      "id": 13,
+      "start": 48.96,
+      "end": 51.36,
+      "text": "Here I write sorted array 2.",
+      "timestamp_label": "0:48"
+    },
+    {
+      "id": 14,
+      "start": 51.36,
+      "end": 52.16,
+      "text": "Okay?",
+      "timestamp_label": "0:51"
+    },
+    {
+      "id": 15,
+      "start": 52.16,
+      "end": 55.16,
+      "text": "Sorted array 2.",
+      "timestamp_label": "0:52"
+    },
+    {
+      "id": 16,
+      "start": 55.16,
+      "end": 59.04,
+      "text": "Here I consider this as something like this.",
+      "timestamp_label": "0:55"
+    },
+    {
+      "id": 17,
+      "start": 59.12,
+      "end": 65.04,
+      "text": "Here I consider this as I and here I consider this as J and here I consider this as K.",
+      "timestamp_label": "0:59"
+    },
+    {
+      "id": 18,
+      "start": 65.04,
+      "end": 66.04,
+      "text": "Okay?",
+      "timestamp_label": "1:05"
+    },
+    {
+      "id": 19,
+      "start": 66.04,
+      "end": 71.28,
+      "text": "So I is equal to J is equal to K is equal to 0.",
+      "timestamp_label": "1:06"
+    },
+    {
+      "id": 20,
+      "start": 71.28,
+      "end": 71.88,
+      "text": "Okay?",
+      "timestamp_label": "1:11"
+    },
+    {
+      "id": 21,
+      "start": 71.88,
+      "end": 74.4,
+      "text": "I initialized I, J and K in this way.",
+      "timestamp_label": "1:11"
+    },
+    {
+      "id": 22,
+      "start": 74.4,
+      "end": 74.92,
+      "text": "Okay?",
+      "timestamp_label": "1:14"
+    },
+    {
+      "id": 23,
+      "start": 74.92,
+      "end": 76.16,
+      "text": "Now what is here?",
+      "timestamp_label": "1:14"
+    },
+    {
+      "id": 24,
+      "start": 76.16,
+      "end": 78.56,
+      "text": "I have its size M and its size N.",
+      "timestamp_label": "1:16"
+    },
+    {
+      "id": 25,
+      "start": 78.56,
+      "end": 79.28,
+      "text": "Okay?",
+      "timestamp_label": "1:18"
+    },
+    {
+      "id": 26,
+      "start": 79.28,
+      "end": 81.36,
+      "text": "So 1, 2, 3, 4, 5.",
+      "timestamp_label": "1:19"
+    },
+    {
+      "id": 27,
+      "start": 81.36,
+      "end": 81.72,
+      "text": "Okay?",
+      "timestamp_label": "1:21"
+    },
+    {
+      "id": 28,
+      "start": 81.72,
+      "end": 83.0,
+      "text": "I am going to 0 to M.",
+      "timestamp_label": "1:21"
+    },
+    {
+      "id": 29,
+      "start": 83.0,
+      "end": 85.24,
+      "text": "You can consider this as size M.",
+      "timestamp_label": "1:23"
+    },
+    {
+      "id": 30,
+      "start": 85.24,
+      "end": 86.72,
+      "text": "How can you do this?",
+      "timestamp_label": "1:25"
+    },
+    {
+      "id": 31,
+      "start": 86.72,
+      "end": 87.36,
+      "text": "Okay?",
+      "timestamp_label": "1:26"
+    },
+    {
+      "id": 32,
+      "start": 87.36,
+      "end": 89.68,
+      "text": "Now what we have to do is merging.",
+      "timestamp_label": "1:27"
+    },
+    {
+      "id": 33,
+      "start": 89.68,
+      "end": 90.28,
+      "text": "Okay?",
+      "timestamp_label": "1:29"
+    },
+    {
+      "id": 34,
+      "start": 90.28,
+      "end": 94.32,
+      "text": "We have to merge two arrays of something like this in one array.",
+      "timestamp_label": "1:30"
+    },
+    {
+      "id": 35,
+      "start": 94.32,
+      "end": 95.28,
+      "text": "So what I will do?",
+      "timestamp_label": "1:34"
+    },
+    {
+      "id": 36,
+      "start": 95.28,
+      "end": 96.44,
+      "text": "I will compare this with this.",
+      "timestamp_label": "1:35"
+    },
+    {
+      "id": 37,
+      "start": 96.44,
+      "end": 99.04,
+      "text": "I mean I will compare the i element to the j element.",
+      "timestamp_label": "1:36"
+    },
+    {
+      "id": 38,
+      "start": 99.04,
+      "end": 101.36,
+      "text": "Then I will see who is smaller among these two.",
+      "timestamp_label": "1:39"
+    },
+    {
+      "id": 39,
+      "start": 101.36,
+      "end": 102.32,
+      "text": "Which one is smaller?",
+      "timestamp_label": "1:41"
+    },
+    {
+      "id": 40,
+      "start": 102.32,
+      "end": 103.08,
+      "text": "The one is smaller.",
+      "timestamp_label": "1:42"
+    },
+    {
+      "id": 41,
+      "start": 103.08,
+      "end": 104.2,
+      "text": "So 1 will come here.",
+      "timestamp_label": "1:43"
+    },
+    {
+      "id": 42,
+      "start": 104.2,
+      "end": 104.68,
+      "text": "Okay?",
+      "timestamp_label": "1:44"
+    },
+    {
+      "id": 43,
+      "start": 104.68,
+      "end": 106.16,
+      "text": "Now because I chose 1.",
+      "timestamp_label": "1:44"
+    },
+    {
+      "id": 44,
+      "start": 106.16,
+      "end": 110.2,
+      "text": "I will increase K to one step and the one who chooses it will also increase it to one step.",
+      "timestamp_label": "1:46"
+    },
+    {
+      "id": 45,
+      "start": 110.2,
+      "end": 112.68,
+      "text": "So I will increase this J to one step first.",
+      "timestamp_label": "1:50"
+    },
+    {
+      "id": 46,
+      "start": 112.68,
+      "end": 113.24,
+      "text": "Okay?",
+      "timestamp_label": "1:52"
+    },
+    {
+      "id": 47,
+      "start": 113.36,
+      "end": 118.48,
+      "text": "So I will increase this J to one step first and along with that I will increase this K to one step first.",
+      "timestamp_label": "1:53"
+    },
+    {
+      "id": 48,
+      "start": 118.48,
+      "end": 119.0,
+      "text": "Okay?",
+      "timestamp_label": "1:58"
+    },
+    {
+      "id": 49,
+      "start": 119.0,
+      "end": 121.92,
+      "text": "So J is one step ahead and K is also one step ahead.",
+      "timestamp_label": "1:59"
+    },
+    {
+      "id": 50,
+      "start": 121.92,
+      "end": 122.96,
+      "text": "Now what I will do?",
+      "timestamp_label": "2:01"
+    },
+    {
+      "id": 51,
+      "start": 122.96,
+      "end": 125.88,
+      "text": "Where it comes and where it comes, I will compare those two.",
+      "timestamp_label": "2:02"
+    },
+    {
+      "id": 52,
+      "start": 125.88,
+      "end": 129.08,
+      "text": "And I will bring the smallest element among those two to K.",
+      "timestamp_label": "2:05"
+    },
+    {
+      "id": 53,
+      "start": 129.08,
+      "end": 130.32,
+      "text": "Which one is the smallest?",
+      "timestamp_label": "2:09"
+    },
+    {
+      "id": 54,
+      "start": 130.32,
+      "end": 131.12,
+      "text": "The one who is smaller.",
+      "timestamp_label": "2:10"
+    },
+    {
+      "id": 55,
+      "start": 131.12,
+      "end": 133.72,
+      "text": "So I will bring the 6 here and I will increase the J to one step ahead.",
+      "timestamp_label": "2:11"
+    },
+    {
+      "id": 56,
+      "start": 133.72,
+      "end": 134.44,
+      "text": "Absolutely right.",
+      "timestamp_label": "2:13"
+    },
+    {
+      "id": 57,
+      "start": 134.44,
+      "end": 135.4,
+      "text": "What I will do with the J?",
+      "timestamp_label": "2:14"
+    },
+    {
+      "id": 58,
+      "start": 135.4,
+      "end": 137.36,
+      "text": "I will increase it to one step ahead.",
+      "timestamp_label": "2:15"
+    },
+    {
+      "id": 59,
+      "start": 137.36,
+      "end": 139.0,
+      "text": "So J is here.",
+      "timestamp_label": "2:17"
+    },
+    {
+      "id": 60,
+      "start": 139.0,
+      "end": 140.68,
+      "text": "I have increased the J to one step ahead.",
+      "timestamp_label": "2:19"
+    },
+    {
+      "id": 61,
+      "start": 140.68,
+      "end": 141.32,
+      "text": "Okay?",
+      "timestamp_label": "2:20"
+    },
+    {
+      "id": 62,
+      "start": 141.32,
+      "end": 144.28,
+      "text": "And along with that, I will increase the K to one step ahead.",
+      "timestamp_label": "2:21"
+    },
+    {
+      "id": 63,
+      "start": 144.28,
+      "end": 146.6,
+      "text": "Now who will I compare it with?",
+      "timestamp_label": "2:24"
+    },
+    {
+      "id": 64,
+      "start": 146.6,
+      "end": 149.72,
+      "text": "I will compare it with the J and the J elements on the I.",
+      "timestamp_label": "2:26"
+    },
+    {
+      "id": 65,
+      "start": 149.72,
+      "end": 151.44,
+      "text": "Who is the smallest of these two?",
+      "timestamp_label": "2:29"
+    },
+    {
+      "id": 66,
+      "start": 151.44,
+      "end": 153.12,
+      "text": "The smallest of these is 7.",
+      "timestamp_label": "2:31"
+    },
+    {
+      "id": 67,
+      "start": 153.12,
+      "end": 156.56,
+      "text": "So I will write 7 here and I will increase the I.",
+      "timestamp_label": "2:33"
+    },
+    {
+      "id": 68,
+      "start": 156.56,
+      "end": 165.92,
+      "text": "That is, whatever I brought in my new era, I will increase the I because I have brought the element from this era.",
+      "timestamp_label": "2:36"
+    },
+    {
+      "id": 69,
+      "start": 165.92,
+      "end": 168.16,
+      "text": "If I had brought it from here, I would have increased the J.",
+      "timestamp_label": "2:45"
+    },
+    {
+      "id": 70,
+      "start": 168.16,
+      "end": 170.04,
+      "text": "Now both are equal, I and J.",
+      "timestamp_label": "2:48"
+    },
+    {
+      "id": 71,
+      "start": 170.04,
+      "end": 172.28,
+      "text": "So how can you break their tie?",
+      "timestamp_label": "2:50"
+    },
+    {
+      "id": 72,
+      "start": 172.28,
+      "end": 173.88,
+      "text": "Suppose you have brought the I.",
+      "timestamp_label": "2:52"
+    },
+    {
+      "id": 73,
+      "start": 173.88,
+      "end": 174.96,
+      "text": "You increase the I.",
+      "timestamp_label": "2:53"
+    },
+    {
+      "id": 74,
+      "start": 174.96,
+      "end": 175.92,
+      "text": "Okay?",
+      "timestamp_label": "2:54"
+    },
+    {
+      "id": 75,
+      "start": 175.92,
+      "end": 177.56,
+      "text": "I will bring the 9 here.",
+      "timestamp_label": "2:55"
+    },
+    {
+      "id": 76,
+      "start": 177.56,
+      "end": 178.28,
+      "text": "Okay?",
+      "timestamp_label": "2:57"
+    },
+    {
+      "id": 77,
+      "start": 178.28,
+      "end": 179.6,
+      "text": "And I will increase it too.",
+      "timestamp_label": "2:58"
+    },
+    {
+      "id": 78,
+      "start": 179.6,
+      "end": 180.4,
+      "text": "So what do we have to do?",
+      "timestamp_label": "2:59"
+    },
+    {
+      "id": 79,
+      "start": 180.4,
+      "end": 181.4,
+      "text": "We have to increase it.",
+      "timestamp_label": "3:00"
+    },
+    {
+      "id": 80,
+      "start": 181.4,
+      "end": 182.44,
+      "text": "We have to increase it.",
+      "timestamp_label": "3:01"
+    },
+    {
+      "id": 81,
+      "start": 182.44,
+      "end": 183.56,
+      "text": "We have to increase it.",
+      "timestamp_label": "3:02"
+    },
+    {
+      "id": 82,
+      "start": 183.56,
+      "end": 188.16,
+      "text": "And the K will always point at a place where there is an element.",
+      "timestamp_label": "3:03"
+    },
+    {
+      "id": 83,
+      "start": 188.16,
+      "end": 189.76,
+      "text": "Now I will compare the 8 and 9.",
+      "timestamp_label": "3:08"
+    },
+    {
+      "id": 84,
+      "start": 189.76,
+      "end": 192.92,
+      "text": "So 9 will come and the J will be incremented here.",
+      "timestamp_label": "3:09"
+    },
+    {
+      "id": 85,
+      "start": 192.92,
+      "end": 193.2,
+      "text": "Okay?",
+      "timestamp_label": "3:12"
+    },
+    {
+      "id": 86,
+      "start": 193.2,
+      "end": 195.08,
+      "text": "So basically what are we doing?",
+      "timestamp_label": "3:13"
+    },
+    {
+      "id": 87,
+      "start": 195.08,
+      "end": 199.2,
+      "text": "We are writing an emerging procedure here.",
+      "timestamp_label": "3:15"
+    },
+    {
+      "id": 88,
+      "start": 199.2,
+      "end": 206.72,
+      "text": "The truth is that the new era we have created, we will merge them and get the sorted area.",
+      "timestamp_label": "3:19"
+    },
+    {
+      "id": 89,
+      "start": 206.72,
+      "end": 207.12,
+      "text": "Okay?",
+      "timestamp_label": "3:26"
+    },
+    {
+      "id": 90,
+      "start": 207.12,
+      "end": 207.92,
+      "text": "So what will happen here?",
+      "timestamp_label": "3:27"
+    },
+    {
+      "id": 91,
+      "start": 207.92,
+      "end": 208.92,
+      "text": "Which one is smaller?",
+      "timestamp_label": "3:27"
+    },
+    {
+      "id": 92,
+      "start": 208.92,
+      "end": 210.6,
+      "text": "8 and 11?",
+      "timestamp_label": "3:28"
+    },
+    {
+      "id": 93,
+      "start": 210.6,
+      "end": 213.88,
+      "text": "I have 11 smaller than 8 and 11.",
+      "timestamp_label": "3:30"
+    },
+    {
+      "id": 94,
+      "start": 213.88,
+      "end": 214.6,
+      "text": "Okay?",
+      "timestamp_label": "3:33"
+    },
+    {
+      "id": 95,
+      "start": 214.6,
+      "end": 217.08,
+      "text": "So what will happen here?",
+      "timestamp_label": "3:34"
+    },
+    {
+      "id": 96,
+      "start": 217.08,
+      "end": 219.8,
+      "text": "11 will come here and J will also increase one step forward.",
+      "timestamp_label": "3:37"
+    },
+    {
+      "id": 97,
+      "start": 219.8,
+      "end": 222.4,
+      "text": "Now when J will increase one step forward, J is not pointing at a place.",
+      "timestamp_label": "3:39"
+    },
+    {
+      "id": 98,
+      "start": 222.4,
+      "end": 223.28,
+      "text": "Okay?",
+      "timestamp_label": "3:42"
+    },
+    {
+      "id": 99,
+      "start": 223.28,
+      "end": 224.32,
+      "text": "So what will I do?",
+      "timestamp_label": "3:43"
+    },
+    {
+      "id": 100,
+      "start": 224.32,
+      "end": 227.44,
+      "text": "I will copy the elements from the remaining elements.",
+      "timestamp_label": "3:44"
+    },
+    {
+      "id": 101,
+      "start": 227.44,
+      "end": 231.64,
+      "text": "18, 19 and 22.",
+      "timestamp_label": "3:47"
+    },
+    {
+      "id": 102,
+      "start": 231.64,
+      "end": 233.48,
+      "text": "So this is called the merging procedure.",
+      "timestamp_label": "3:51"
+    },
+    {
+      "id": 103,
+      "start": 233.48,
+      "end": 234.24,
+      "text": "What was this?",
+      "timestamp_label": "3:53"
+    },
+    {
+      "id": 104,
+      "start": 234.24,
+      "end": 235.44,
+      "text": "This was the merging procedure.",
+      "timestamp_label": "3:54"
+    },
+    {
+      "id": 105,
+      "start": 235.44,
+      "end": 238.76,
+      "text": "If I tell you what this is, I will tell you the merging procedure.",
+      "timestamp_label": "3:55"
+    },
+    {
+      "id": 106,
+      "start": 238.76,
+      "end": 241.96,
+      "text": "It is useful to merge two arrays.",
+      "timestamp_label": "3:58"
+    },
+    {
+      "id": 107,
+      "start": 241.96,
+      "end": 249.12,
+      "text": "So I will write here merging and procedure.",
+      "timestamp_label": "4:01"
+    },
+    {
+      "id": 108,
+      "start": 249.12,
+      "end": 249.84,
+      "text": "What does this do?",
+      "timestamp_label": "4:09"
+    },
+    {
+      "id": 109,
+      "start": 249.84,
+      "end": 251.88,
+      "text": "Sorted area 1, sorted area 2.",
+      "timestamp_label": "4:09"
+    },
+    {
+      "id": 110,
+      "start": 251.88,
+      "end": 256.88,
+      "text": "It makes a sorted area 3.",
+      "timestamp_label": "4:11"
+    },
+    {
+      "id": 111,
+      "start": 256.88,
+      "end": 258.4,
+      "text": "How did you like the procedure?",
+      "timestamp_label": "4:16"
+    },
+    {
+      "id": 112,
+      "start": 258.4,
+      "end": 260.4,
+      "text": "Let me tell you once again what we did.",
+      "timestamp_label": "4:18"
+    },
+    {
+      "id": 113,
+      "start": 260.4,
+      "end": 261.36,
+      "text": "What we did here?",
+      "timestamp_label": "4:20"
+    },
+    {
+      "id": 114,
+      "start": 261.36,
+      "end": 266.48,
+      "text": "We kept on increasing the i and j and we kept on comparing the i and j elements.",
+      "timestamp_label": "4:21"
+    },
+    {
+      "id": 115,
+      "start": 266.48,
+      "end": 270.84,
+      "text": "And in the kth element, that is, we kept on adding the new array.",
+      "timestamp_label": "4:26"
+    },
+    {
+      "id": 116,
+      "start": 270.84,
+      "end": 272.56,
+      "text": "We compared 7 and 1.",
+      "timestamp_label": "4:30"
+    },
+    {
+      "id": 117,
+      "start": 272.56,
+      "end": 275.92,
+      "text": "We brought one smaller ring, then we compared 6 and 7.",
+      "timestamp_label": "4:32"
+    },
+    {
+      "id": 118,
+      "start": 275.92,
+      "end": 278.76,
+      "text": "We brought 6, then we compared 9 and 7.",
+      "timestamp_label": "4:35"
+    },
+    {
+      "id": 119,
+      "start": 278.76,
+      "end": 282.88,
+      "text": "We brought 7, then we compared 9 and 9, then we brought 9 again.",
+      "timestamp_label": "4:38"
+    },
+    {
+      "id": 120,
+      "start": 282.88,
+      "end": 285.08,
+      "text": "Then we compared 11 and 18.",
+      "timestamp_label": "4:42"
+    },
+    {
+      "id": 121,
+      "start": 285.08,
+      "end": 287.64,
+      "text": "So we are increasing the i and j.",
+      "timestamp_label": "4:45"
+    },
+    {
+      "id": 122,
+      "start": 287.64,
+      "end": 290.72,
+      "text": "And we are increasing the k here and we are also increasing the new array.",
+      "timestamp_label": "4:47"
+    },
+    {
+      "id": 123,
+      "start": 290.72,
+      "end": 294.72,
+      "text": "If I have to write this procedure in code,",
+      "timestamp_label": "4:50"
+    },
+    {
+      "id": 124,
+      "start": 294.72,
+      "end": 296.48,
+      "text": "If someone will ask me to write the code,",
+      "timestamp_label": "4:54"
+    },
+    {
+      "id": 125,
+      "start": 296.48,
+      "end": 298.48,
+      "text": "Then how will I see the code?",
+      "timestamp_label": "4:56"
+    },
+    {
+      "id": 126,
+      "start": 298.48,
+      "end": 299.68,
+      "text": "Let's see.",
+      "timestamp_label": "4:58"
+    },
+    {
+      "id": 127,
+      "start": 299.68,
+      "end": 301.52,
+      "text": "So guys, if I have two arrays,",
+      "timestamp_label": "4:59"
+    },
+    {
+      "id": 128,
+      "start": 301.52,
+      "end": 305.2,
+      "text": "Suppose I have one array and one other array,",
+      "timestamp_label": "5:01"
+    },
+    {
+      "id": 129,
+      "start": 305.2,
+      "end": 307.48,
+      "text": "They have to merge and make a third array.",
+      "timestamp_label": "5:05"
+    },
+    {
+      "id": 130,
+      "start": 307.48,
+      "end": 310.36,
+      "text": "Okay, they have to merge and make a third array.",
+      "timestamp_label": "5:07"
+    },
+    {
+      "id": 131,
+      "start": 310.36,
+      "end": 311.44,
+      "text": "So what will I do?",
+      "timestamp_label": "5:10"
+    },
+    {
+      "id": 132,
+      "start": 311.48,
+      "end": 316.0,
+      "text": "I will take one of these arrays in the third element.",
+      "timestamp_label": "5:11"
+    },
+    {
+      "id": 133,
+      "start": 316.0,
+      "end": 317.4,
+      "text": "Okay, and how will I take it?",
+      "timestamp_label": "5:16"
+    },
+    {
+      "id": 134,
+      "start": 317.4,
+      "end": 318.48,
+      "text": "I will tell you this too.",
+      "timestamp_label": "5:17"
+    },
+    {
+      "id": 135,
+      "start": 318.48,
+      "end": 320.24,
+      "text": "So what will I do here?",
+      "timestamp_label": "5:18"
+    },
+    {
+      "id": 136,
+      "start": 320.24,
+      "end": 321.6,
+      "text": "I will write the procedure.",
+      "timestamp_label": "5:20"
+    },
+    {
+      "id": 137,
+      "start": 321.6,
+      "end": 323.88,
+      "text": "So I will write the merge procedure here.",
+      "timestamp_label": "5:21"
+    },
+    {
+      "id": 138,
+      "start": 323.88,
+      "end": 326.24,
+      "text": "I will write a void merge here.",
+      "timestamp_label": "5:23"
+    },
+    {
+      "id": 139,
+      "start": 326.24,
+      "end": 328.88,
+      "text": "Okay, I will write void.",
+      "timestamp_label": "5:26"
+    },
+    {
+      "id": 140,
+      "start": 328.88,
+      "end": 330.88,
+      "text": "And after that I will write merge.",
+      "timestamp_label": "5:28"
+    },
+    {
+      "id": 141,
+      "start": 330.88,
+      "end": 332.52,
+      "text": "I wrote void merge here.",
+      "timestamp_label": "5:30"
+    },
+    {
+      "id": 142,
+      "start": 332.52,
+      "end": 333.6,
+      "text": "What will it take?",
+      "timestamp_label": "5:32"
+    },
+    {
+      "id": 143,
+      "start": 333.6,
+      "end": 335.92,
+      "text": "It will take an array A.",
+      "timestamp_label": "5:33"
+    },
+    {
+      "id": 144,
+      "start": 335.92,
+      "end": 338.6,
+      "text": "I will consider it as array A, I will consider it as array B.",
+      "timestamp_label": "5:35"
+    },
+    {
+      "id": 145,
+      "start": 338.6,
+      "end": 340.76,
+      "text": "And the one I am merging in, I will consider it as array C.",
+      "timestamp_label": "5:38"
+    },
+    {
+      "id": 146,
+      "start": 340.76,
+      "end": 342.68,
+      "text": "Okay, suppose I have an array,",
+      "timestamp_label": "5:40"
+    },
+    {
+      "id": 147,
+      "start": 342.68,
+      "end": 344.84,
+      "text": "In which I am merging.",
+      "timestamp_label": "5:42"
+    },
+    {
+      "id": 148,
+      "start": 344.84,
+      "end": 346.72,
+      "text": "Okay, so what will I consider it?",
+      "timestamp_label": "5:44"
+    },
+    {
+      "id": 149,
+      "start": 346.72,
+      "end": 348.6,
+      "text": "I will consider it as array C.",
+      "timestamp_label": "5:46"
+    },
+    {
+      "id": 150,
+      "start": 348.6,
+      "end": 350.88,
+      "text": "Okay, I will consider it as array C.",
+      "timestamp_label": "5:48"
+    },
+    {
+      "id": 151,
+      "start": 350.88,
+      "end": 352.68,
+      "text": "So let me do a little work here.",
+      "timestamp_label": "5:50"
+    },
+    {
+      "id": 152,
+      "start": 352.68,
+      "end": 353.4,
+      "text": "Let me make it like this.",
+      "timestamp_label": "5:52"
+    },
+    {
+      "id": 153,
+      "start": 353.4,
+      "end": 354.44,
+      "text": "The rectangle is good.",
+      "timestamp_label": "5:53"
+    },
+    {
+      "id": 154,
+      "start": 354.44,
+      "end": 356.56,
+      "text": "So that we can see C a little better.",
+      "timestamp_label": "5:54"
+    },
+    {
+      "id": 155,
+      "start": 356.56,
+      "end": 358.16,
+      "text": "It should look good too.",
+      "timestamp_label": "5:56"
+    },
+    {
+      "id": 156,
+      "start": 358.16,
+      "end": 359.4,
+      "text": "That is also necessary.",
+      "timestamp_label": "5:58"
+    },
+    {
+      "id": 157,
+      "start": 359.4,
+      "end": 360.52,
+      "text": "So I will consider it as C.",
+      "timestamp_label": "5:59"
+    },
+    {
+      "id": 158,
+      "start": 360.52,
+      "end": 362.44,
+      "text": "Suppose we merge it in this.",
+      "timestamp_label": "6:00"
+    },
+    {
+      "id": 159,
+      "start": 362.44,
+      "end": 364.44,
+      "text": "Something like this, that C is also sorted.",
+      "timestamp_label": "6:02"
+    },
+    {
+      "id": 160,
+      "start": 364.44,
+      "end": 367.48,
+      "text": "So this is sorted.",
+      "timestamp_label": "6:04"
+    },
+    {
+      "id": 161,
+      "start": 367.48,
+      "end": 370.24,
+      "text": "This is also sorted.",
+      "timestamp_label": "6:07"
+    },
+    {
+      "id": 162,
+      "start": 370.24,
+      "end": 373.04,
+      "text": "And we also need this sorted.",
+      "timestamp_label": "6:10"
+    },
+    {
+      "id": 163,
+      "start": 373.04,
+      "end": 374.56,
+      "text": "So we have to do something like merging,",
+      "timestamp_label": "6:13"
+    },
+    {
+      "id": 164,
+      "start": 374.56,
+      "end": 375.56,
+      "text": "that both are sorted.",
+      "timestamp_label": "6:14"
+    },
+    {
+      "id": 165,
+      "start": 375.56,
+      "end": 376.72,
+      "text": "What did we say?",
+      "timestamp_label": "6:15"
+    },
+    {
+      "id": 166,
+      "start": 376.72,
+      "end": 379.12,
+      "text": "We said we will take an i from here.",
+      "timestamp_label": "6:16"
+    },
+    {
+      "id": 167,
+      "start": 379.12,
+      "end": 380.76,
+      "text": "We will consider this as j.",
+      "timestamp_label": "6:19"
+    },
+    {
+      "id": 168,
+      "start": 380.76,
+      "end": 383.08,
+      "text": "And we will consider this as k.",
+      "timestamp_label": "6:20"
+    },
+    {
+      "id": 169,
+      "start": 383.08,
+      "end": 384.08,
+      "text": "And there are elements in this.",
+      "timestamp_label": "6:23"
+    },
+    {
+      "id": 170,
+      "start": 384.08,
+      "end": 385.08,
+      "text": "There are elements in this.",
+      "timestamp_label": "6:24"
+    },
+    {
+      "id": 171,
+      "start": 385.08,
+      "end": 387.32,
+      "text": "You can make it like this.",
+      "timestamp_label": "6:25"
+    },
+    {
+      "id": 172,
+      "start": 387.32,
+      "end": 389.48,
+      "text": "Okay, there are many elements in this.",
+      "timestamp_label": "6:27"
+    },
+    {
+      "id": 173,
+      "start": 389.48,
+      "end": 391.96,
+      "text": "So I wrote something like i, j.",
+      "timestamp_label": "6:29"
+    },
+    {
+      "id": 174,
+      "start": 391.96,
+      "end": 395.96,
+      "text": "So this will take an array A, B, array A.",
+      "timestamp_label": "6:31"
+    },
+    {
+      "id": 175,
+      "start": 395.96,
+      "end": 398.48,
+      "text": "Okay, and C array A.",
+      "timestamp_label": "6:35"
+    },
+    {
+      "id": 176,
+      "start": 398.6,
+      "end": 400.6,
+      "text": "And it will merge it in A and B in C.",
+      "timestamp_label": "6:38"
+    },
+    {
+      "id": 177,
+      "start": 400.6,
+      "end": 401.6,
+      "text": "Okay.",
+      "timestamp_label": "6:40"
+    },
+    {
+      "id": 178,
+      "start": 401.6,
+      "end": 405.2,
+      "text": "And suppose its size M, its size N,",
+      "timestamp_label": "6:41"
+    },
+    {
+      "id": 179,
+      "start": 405.2,
+      "end": 406.56,
+      "text": "its size M plus N will be.",
+      "timestamp_label": "6:45"
+    },
+    {
+      "id": 180,
+      "start": 406.56,
+      "end": 407.56,
+      "text": "Okay.",
+      "timestamp_label": "6:46"
+    },
+    {
+      "id": 181,
+      "start": 408.44,
+      "end": 411.04,
+      "text": "So I will take M and N as an input.",
+      "timestamp_label": "6:48"
+    },
+    {
+      "id": 182,
+      "start": 411.04,
+      "end": 412.04,
+      "text": "Okay.",
+      "timestamp_label": "6:51"
+    },
+    {
+      "id": 183,
+      "start": 412.04,
+      "end": 413.04,
+      "text": "What I will do in this?",
+      "timestamp_label": "6:52"
+    },
+    {
+      "id": 184,
+      "start": 413.04,
+      "end": 414.8,
+      "text": "I will write the code in this.",
+      "timestamp_label": "6:53"
+    },
+    {
+      "id": 185,
+      "start": 414.8,
+      "end": 416.0,
+      "text": "To merge these two.",
+      "timestamp_label": "6:54"
+    },
+    {
+      "id": 186,
+      "start": 416.0,
+      "end": 417.0,
+      "text": "Okay.",
+      "timestamp_label": "6:56"
+    },
+    {
+      "id": 187,
+      "start": 417.0,
+      "end": 418.0,
+      "text": "So I will write it here.",
+      "timestamp_label": "6:57"
+    },
+    {
+      "id": 188,
+      "start": 418.0,
+      "end": 421.6,
+      "text": "Int i, j, k.",
+      "timestamp_label": "6:58"
+    },
+    {
+      "id": 189,
+      "start": 421.6,
+      "end": 425.12,
+      "text": "And i is equal to j is equal to k is equal to 0.",
+      "timestamp_label": "7:01"
+    },
+    {
+      "id": 190,
+      "start": 425.12,
+      "end": 427.12,
+      "text": "So i, j and k are all 0.",
+      "timestamp_label": "7:05"
+    },
+    {
+      "id": 191,
+      "start": 427.12,
+      "end": 428.12,
+      "text": "Okay.",
+      "timestamp_label": "7:07"
+    },
+    {
+      "id": 192,
+      "start": 428.16,
+      "end": 429.16,
+      "text": "Now what will I do?",
+      "timestamp_label": "7:08"
+    },
+    {
+      "id": 193,
+      "start": 429.16,
+      "end": 435.8,
+      "text": "Now I will say that until the time M is over and N is over,",
+      "timestamp_label": "7:09"
+    },
+    {
+      "id": 194,
+      "start": 435.8,
+      "end": 437.0,
+      "text": "until then what will you do?",
+      "timestamp_label": "7:15"
+    },
+    {
+      "id": 195,
+      "start": 437.0,
+      "end": 439.0,
+      "text": "Scan this array.",
+      "timestamp_label": "7:17"
+    },
+    {
+      "id": 196,
+      "start": 439.0,
+      "end": 440.0,
+      "text": "Okay.",
+      "timestamp_label": "7:19"
+    },
+    {
+      "id": 197,
+      "start": 440.0,
+      "end": 447.0,
+      "text": "I will say here while until i is less than M.",
+      "timestamp_label": "7:20"
+    },
+    {
+      "id": 198,
+      "start": 447.0,
+      "end": 451.0,
+      "text": "And i is less than N.",
+      "timestamp_label": "7:27"
+    },
+    {
+      "id": 199,
+      "start": 451.0,
+      "end": 452.0,
+      "text": "What am I doing?",
+      "timestamp_label": "7:31"
+    },
+    {
+      "id": 200,
+      "start": 452.0,
+      "end": 453.0,
+      "text": "i less than M and i less than N.",
+      "timestamp_label": "7:32"
+    },
+    {
+      "id": 201,
+      "start": 453.0,
+      "end": 454.0,
+      "text": "Why am I writing?",
+      "timestamp_label": "7:33"
+    },
+    {
+      "id": 202,
+      "start": 454.0,
+      "end": 455.0,
+      "text": "I am doing this.",
+      "timestamp_label": "7:34"
+    },
+    {
+      "id": 203,
+      "start": 455.0,
+      "end": 456.0,
+      "text": "See, I want to move forward.",
+      "timestamp_label": "7:35"
+    },
+    {
+      "id": 204,
+      "start": 456.08,
+      "end": 457.0,
+      "text": "I want to move forward.",
+      "timestamp_label": "7:36"
+    },
+    {
+      "id": 205,
+      "start": 457.0,
+      "end": 458.0,
+      "text": "I want to move forward.",
+      "timestamp_label": "7:37"
+    },
+    {
+      "id": 206,
+      "start": 458.0,
+      "end": 459.0,
+      "text": "Okay.",
+      "timestamp_label": "7:38"
+    },
+    {
+      "id": 207,
+      "start": 459.0,
+      "end": 460.0,
+      "text": "So I will say here while until I reach the end of the array.",
+      "timestamp_label": "7:39"
+    },
+    {
+      "id": 208,
+      "start": 460.0,
+      "end": 461.0,
+      "text": "So until the time i is less than N.",
+      "timestamp_label": "7:40"
+    },
+    {
+      "id": 209,
+      "start": 461.0,
+      "end": 462.0,
+      "text": "I mean until the time I reach the end.",
+      "timestamp_label": "7:41"
+    },
+    {
+      "id": 210,
+      "start": 462.0,
+      "end": 463.0,
+      "text": "I mean until I reach the end.",
+      "timestamp_label": "7:42"
+    },
+    {
+      "id": 211,
+      "start": 463.0,
+      "end": 464.0,
+      "text": "I mean until I reach the end.",
+      "timestamp_label": "7:43"
+    },
+    {
+      "id": 212,
+      "start": 464.0,
+      "end": 465.0,
+      "text": "Until then I want to increment the i and increment what I want to do?",
+      "timestamp_label": "7:44"
+    },
+    {
+      "id": 213,
+      "start": 465.0,
+      "end": 476.24,
+      "text": "I want to compare here that if ai is less than bj.",
+      "timestamp_label": "7:45"
+    },
+    {
+      "id": 214,
+      "start": 476.24,
+      "end": 477.24,
+      "text": "What will I do?",
+      "timestamp_label": "7:56"
+    },
+    {
+      "id": 215,
+      "start": 477.24,
+      "end": 484.24,
+      "text": "I will write here that the ck comes in ai.",
+      "timestamp_label": "7:57"
+    },
+    {
+      "id": 216,
+      "start": 484.24,
+      "end": 490.24,
+      "text": "Understand that the ai and bj I compared.",
+      "timestamp_label": "8:04"
+    },
+    {
+      "id": 217,
+      "start": 490.24,
+      "end": 491.24,
+      "text": "Suppose here it was 7.",
+      "timestamp_label": "8:10"
+    },
+    {
+      "id": 218,
+      "start": 491.24,
+      "end": 493.24,
+      "text": "Here it was 8.",
+      "timestamp_label": "8:11"
+    },
+    {
+      "id": 219,
+      "start": 493.24,
+      "end": 494.24,
+      "text": "Okay.",
+      "timestamp_label": "8:13"
+    },
+    {
+      "id": 220,
+      "start": 494.24,
+      "end": 495.24,
+      "text": "I will compare 7 and 8.",
+      "timestamp_label": "8:14"
+    },
+    {
+      "id": 221,
+      "start": 495.24,
+      "end": 497.24,
+      "text": "Suppose 7 and 8 is less than ai.",
+      "timestamp_label": "8:15"
+    },
+    {
+      "id": 222,
+      "start": 497.24,
+      "end": 498.24,
+      "text": "Means 7 is less.",
+      "timestamp_label": "8:17"
+    },
+    {
+      "id": 223,
+      "start": 498.24,
+      "end": 500.24,
+      "text": "You can see that this condition is true.",
+      "timestamp_label": "8:18"
+    },
+    {
+      "id": 224,
+      "start": 500.24,
+      "end": 501.24,
+      "text": "So what I will do?",
+      "timestamp_label": "8:20"
+    },
+    {
+      "id": 225,
+      "start": 501.24,
+      "end": 502.24,
+      "text": "The c array is in its k.",
+      "timestamp_label": "8:21"
+    },
+    {
+      "id": 226,
+      "start": 502.24,
+      "end": 504.24,
+      "text": "Means here I will put ai because ai is smaller.",
+      "timestamp_label": "8:22"
+    },
+    {
+      "id": 227,
+      "start": 504.24,
+      "end": 505.24,
+      "text": "So I will put 60 here.",
+      "timestamp_label": "8:24"
+    },
+    {
+      "id": 228,
+      "start": 505.24,
+      "end": 506.24,
+      "text": "Now which one will I move ahead?",
+      "timestamp_label": "8:25"
+    },
+    {
+      "id": 229,
+      "start": 506.24,
+      "end": 508.1,
+      "text": "I will move ahead or the j will move ahead or the i will move ahead.",
+      "timestamp_label": "8:26"
+    },
+    {
+      "id": 230,
+      "start": 508.1,
+      "end": 512.24,
+      "text": "Because I have taken the element of i.",
+      "timestamp_label": "8:28"
+    },
+    {
+      "id": 231,
+      "start": 512.24,
+      "end": 513.24,
+      "text": "So here I will write i++.",
+      "timestamp_label": "8:32"
+    },
+    {
+      "id": 232,
+      "start": 513.24,
+      "end": 516.24,
+      "text": "Will I move ahead your k and move ahead?",
+      "timestamp_label": "8:33"
+    },
+    {
+      "id": 233,
+      "start": 516.24,
+      "end": 517.24,
+      "text": "K++.",
+      "timestamp_label": "8:36"
+    },
+    {
+      "id": 234,
+      "start": 517.24,
+      "end": 518.24,
+      "text": "Okay.",
+      "timestamp_label": "8:37"
+    },
+    {
+      "id": 235,
+      "start": 518.24,
+      "end": 525.24,
+      "text": "So here I will write a bracket too.",
+      "timestamp_label": "8:38"
+    },
+    {
+      "id": 236,
+      "start": 525.24,
+      "end": 526.24,
+      "text": "If you talk about syntax.",
+      "timestamp_label": "8:45"
+    },
+    {
+      "id": 237,
+      "start": 526.24,
+      "end": 527.24,
+      "text": "Otherwise what will I do?",
+      "timestamp_label": "8:46"
+    },
+    {
+      "id": 238,
+      "start": 527.24,
+      "end": 528.24,
+      "text": "Otherwise I will write else.",
+      "timestamp_label": "8:47"
+    },
+    {
+      "id": 239,
+      "start": 528.24,
+      "end": 529.24,
+      "text": "What will you do?",
+      "timestamp_label": "8:48"
+    },
+    {
+      "id": 240,
+      "start": 529.24,
+      "end": 534.24,
+      "text": "Else you will copy bj in ck.",
+      "timestamp_label": "8:49"
+    },
+    {
+      "id": 241,
+      "start": 534.24,
+      "end": 539.24,
+      "text": "if you can't copy the i, you will copy the j",
+      "timestamp_label": "8:54"
+    },
+    {
+      "id": 242,
+      "start": 539.24,
+      "end": 543.24,
+      "text": "if it was 17, then I would copy the 8, and j would go ahead",
+      "timestamp_label": "8:59"
+    },
+    {
+      "id": 243,
+      "start": 543.24,
+      "end": 546.24,
+      "text": "so I would do j++ and k++",
+      "timestamp_label": "9:03"
+    },
+    {
+      "id": 244,
+      "start": 546.24,
+      "end": 551.24,
+      "text": "I will do j++ and k++",
+      "timestamp_label": "9:06"
+    },
+    {
+      "id": 245,
+      "start": 551.24,
+      "end": 554.24,
+      "text": "now I have run this while loop",
+      "timestamp_label": "9:11"
+    },
+    {
+      "id": 246,
+      "start": 554.24,
+      "end": 556.24,
+      "text": "and how long will it keep running?",
+      "timestamp_label": "9:14"
+    },
+    {
+      "id": 247,
+      "start": 556.24,
+      "end": 559.24,
+      "text": "it will keep running until I reach here",
+      "timestamp_label": "9:16"
+    },
+    {
+      "id": 248,
+      "start": 559.24,
+      "end": 563.24,
+      "text": "if you have one array, its size is 2",
+      "timestamp_label": "9:19"
+    },
+    {
+      "id": 249,
+      "start": 563.24,
+      "end": 569.24,
+      "text": "its size is 2, and you have one more array",
+      "timestamp_label": "9:23"
+    },
+    {
+      "id": 250,
+      "start": 569.24,
+      "end": 573.24,
+      "text": "its size is 3",
+      "timestamp_label": "9:29"
+    },
+    {
+      "id": 251,
+      "start": 573.24,
+      "end": 576.24,
+      "text": "and this is here",
+      "timestamp_label": "9:33"
+    },
+    {
+      "id": 252,
+      "start": 576.24,
+      "end": 579.24,
+      "text": "and j is here",
+      "timestamp_label": "9:36"
+    },
+    {
+      "id": 253,
+      "start": 579.24,
+      "end": 581.24,
+      "text": "so what you will do?",
+      "timestamp_label": "9:39"
+    },
+    {
+      "id": 254,
+      "start": 581.24,
+      "end": 584.24,
+      "text": "you will want the remaining elements to be copied",
+      "timestamp_label": "9:41"
+    },
+    {
+      "id": 255,
+      "start": 584.24,
+      "end": 587.24,
+      "text": "because you have finished one array",
+      "timestamp_label": "9:44"
+    },
+    {
+      "id": 256,
+      "start": 587.24,
+      "end": 592.24,
+      "text": "so this is 7, and this is 1, and this is 22",
+      "timestamp_label": "9:47"
+    },
+    {
+      "id": 257,
+      "start": 592.24,
+      "end": 597.24,
+      "text": "in fact I will do 18, 22, 22",
+      "timestamp_label": "9:52"
+    },
+    {
+      "id": 258,
+      "start": 597.24,
+      "end": 602.24,
+      "text": "so if this is 18, 22, 22, and this is 7, and 11, then you will copy the elements",
+      "timestamp_label": "9:57"
+    },
+    {
+      "id": 259,
+      "start": 602.24,
+      "end": 604.24,
+      "text": "and once 7 and 11 are copied",
+      "timestamp_label": "10:02"
+    },
+    {
+      "id": 260,
+      "start": 604.24,
+      "end": 605.24,
+      "text": "then what will happen?",
+      "timestamp_label": "10:04"
+    },
+    {
+      "id": 261,
+      "start": 605.24,
+      "end": 607.24,
+      "text": "that this array will remain the same",
+      "timestamp_label": "10:05"
+    },
+    {
+      "id": 262,
+      "start": 607.24,
+      "end": 609.24,
+      "text": "so now I don't need to check it",
+      "timestamp_label": "10:07"
+    },
+    {
+      "id": 263,
+      "start": 609.24,
+      "end": 611.24,
+      "text": "I can copy it in a new array",
+      "timestamp_label": "10:09"
+    },
+    {
+      "id": 264,
+      "start": 611.24,
+      "end": 614.24,
+      "text": "because 7, 11 are copied and this array is sorted",
+      "timestamp_label": "10:11"
+    },
+    {
+      "id": 265,
+      "start": 614.24,
+      "end": 616.24,
+      "text": "and only the elements are saved",
+      "timestamp_label": "10:14"
+    },
+    {
+      "id": 266,
+      "start": 616.24,
+      "end": 618.24,
+      "text": "so if I can copy them in the same way",
+      "timestamp_label": "10:16"
+    },
+    {
+      "id": 267,
+      "start": 618.24,
+      "end": 620.24,
+      "text": "then what will I do here?",
+      "timestamp_label": "10:18"
+    },
+    {
+      "id": 268,
+      "start": 620.24,
+      "end": 622.24,
+      "text": "I will write one more while loop",
+      "timestamp_label": "10:20"
+    },
+    {
+      "id": 269,
+      "start": 622.24,
+      "end": 624.24,
+      "text": "if the remaining elements are saved",
+      "timestamp_label": "10:22"
+    },
+    {
+      "id": 270,
+      "start": 624.24,
+      "end": 626.24,
+      "text": "then copy all the elements of the array",
+      "timestamp_label": "10:24"
+    },
+    {
+      "id": 271,
+      "start": 626.24,
+      "end": 628.24,
+      "text": "or copy all the elements of the array",
+      "timestamp_label": "10:26"
+    },
+    {
+      "id": 272,
+      "start": 628.24,
+      "end": 630.24,
+      "text": "if one of these elements is saved",
+      "timestamp_label": "10:28"
+    },
+    {
+      "id": 273,
+      "start": 630.24,
+      "end": 632.24,
+      "text": "then it will be over",
+      "timestamp_label": "10:30"
+    },
+    {
+      "id": 274,
+      "start": 632.24,
+      "end": 634.24,
+      "text": "you know who is who",
+      "timestamp_label": "10:32"
+    },
+    {
+      "id": 275,
+      "start": 634.24,
+      "end": 636.24,
+      "text": "you have taken this element, this one, this one, this one",
+      "timestamp_label": "10:34"
+    },
+    {
+      "id": 276,
+      "start": 636.24,
+      "end": 638.24,
+      "text": "this one too",
+      "timestamp_label": "10:36"
+    },
+    {
+      "id": 277,
+      "start": 638.24,
+      "end": 640.24,
+      "text": "so this is saved",
+      "timestamp_label": "10:38"
+    },
+    {
+      "id": 278,
+      "start": 640.24,
+      "end": 642.24,
+      "text": "and this is saved",
+      "timestamp_label": "10:40"
+    },
+    {
+      "id": 279,
+      "start": 642.24,
+      "end": 644.24,
+      "text": "so I will copy all the remaining elements of this array",
+      "timestamp_label": "10:42"
+    },
+    {
+      "id": 280,
+      "start": 644.24,
+      "end": 646.24,
+      "text": "obviously I will copy them",
+      "timestamp_label": "10:44"
+    },
+    {
+      "id": 281,
+      "start": 646.24,
+      "end": 648.24,
+      "text": "and the size of this array is a little bit more",
+      "timestamp_label": "10:46"
+    },
+    {
+      "id": 282,
+      "start": 648.24,
+      "end": 650.24,
+      "text": "because these are big arrays",
+      "timestamp_label": "10:48"
+    },
+    {
+      "id": 283,
+      "start": 650.24,
+      "end": 652.24,
+      "text": "so I didn't make the size of this array",
+      "timestamp_label": "10:50"
+    },
+    {
+      "id": 284,
+      "start": 652.24,
+      "end": 654.24,
+      "text": "you should note that there will be more elements in this array",
+      "timestamp_label": "10:52"
+    },
+    {
+      "id": 285,
+      "start": 654.24,
+      "end": 656.24,
+      "text": "so the arrays A, B and C",
+      "timestamp_label": "10:54"
+    },
+    {
+      "id": 286,
+      "start": 656.24,
+      "end": 658.24,
+      "text": "will copy the merge procedure A and B",
+      "timestamp_label": "10:56"
+    },
+    {
+      "id": 287,
+      "start": 658.24,
+      "end": 660.24,
+      "text": "in C",
+      "timestamp_label": "10:58"
+    },
+    {
+      "id": 288,
+      "start": 660.24,
+      "end": 662.24,
+      "text": "so I have just written I and J",
+      "timestamp_label": "11:00"
+    },
+    {
+      "id": 289,
+      "start": 662.24,
+      "end": 664.24,
+      "text": "I have written I and J",
+      "timestamp_label": "11:02"
+    },
+    {
+      "id": 290,
+      "start": 664.24,
+      "end": 666.24,
+      "text": "and I am equal to 1",
+      "timestamp_label": "11:04"
+    },
+    {
+      "id": 291,
+      "start": 666.24,
+      "end": 668.24,
+      "text": "or",
+      "timestamp_label": "11:06"
+    },
+    {
+      "id": 292,
+      "start": 668.24,
+      "end": 670.24,
+      "text": "the J I have written",
+      "timestamp_label": "11:08"
+    },
+    {
+      "id": 293,
+      "start": 670.24,
+      "end": 672.24,
+      "text": "I was wrong",
+      "timestamp_label": "11:10"
+    },
+    {
+      "id": 294,
+      "start": 672.24,
+      "end": 674.24,
+      "text": "J less than N",
+      "timestamp_label": "11:12"
+    },
+    {
+      "id": 295,
+      "start": 674.24,
+      "end": 676.24,
+      "text": "okay, I have to do this",
+      "timestamp_label": "11:14"
+    },
+    {
+      "id": 296,
+      "start": 676.24,
+      "end": 678.24,
+      "text": "and once I have done this",
+      "timestamp_label": "11:16"
+    },
+    {
+      "id": 297,
+      "start": 678.24,
+      "end": 680.24,
+      "text": "what I will do finally",
+      "timestamp_label": "11:18"
+    },
+    {
+      "id": 298,
+      "start": 680.24,
+      "end": 682.24,
+      "text": "I or J will be over",
+      "timestamp_label": "11:20"
+    },
+    {
+      "id": 299,
+      "start": 682.24,
+      "end": 684.24,
+      "text": "then this will be the Y loop",
+      "timestamp_label": "11:22"
+    },
+    {
+      "id": 300,
+      "start": 684.24,
+      "end": 686.24,
+      "text": "listen to me again",
+      "timestamp_label": "11:24"
+    },
+    {
+      "id": 301,
+      "start": 686.24,
+      "end": 688.24,
+      "text": "because I and J",
+      "timestamp_label": "11:26"
+    },
+    {
+      "id": 302,
+      "start": 688.24,
+      "end": 690.24,
+      "text": "will be over",
+      "timestamp_label": "11:28"
+    },
+    {
+      "id": 303,
+      "start": 690.24,
+      "end": 692.24,
+      "text": "and then",
+      "timestamp_label": "11:30"
+    },
+    {
+      "id": 304,
+      "start": 692.24,
+      "end": 694.24,
+      "text": "I will copy all the remaining elements",
+      "timestamp_label": "11:32"
+    },
+    {
+      "id": 305,
+      "start": 694.24,
+      "end": 696.24,
+      "text": "as it is",
+      "timestamp_label": "11:34"
+    },
+    {
+      "id": 306,
+      "start": 696.24,
+      "end": 698.24,
+      "text": "okay, so what I will do for that",
+      "timestamp_label": "11:36"
+    },
+    {
+      "id": 307,
+      "start": 698.24,
+      "end": 700.24,
+      "text": "I will write a while loop",
+      "timestamp_label": "11:38"
+    },
+    {
+      "id": 308,
+      "start": 700.24,
+      "end": 702.24,
+      "text": "I will write it like this",
+      "timestamp_label": "11:40"
+    },
+    {
+      "id": 309,
+      "start": 702.24,
+      "end": 704.24,
+      "text": "I will make some space here",
+      "timestamp_label": "11:42"
+    },
+    {
+      "id": 310,
+      "start": 704.24,
+      "end": 706.24,
+      "text": "and here I will write a while loop",
+      "timestamp_label": "11:44"
+    },
+    {
+      "id": 311,
+      "start": 706.24,
+      "end": 708.24,
+      "text": "I will write",
+      "timestamp_label": "11:46"
+    },
+    {
+      "id": 312,
+      "start": 708.24,
+      "end": 710.24,
+      "text": "while like this",
+      "timestamp_label": "11:48"
+    },
+    {
+      "id": 313,
+      "start": 710.24,
+      "end": 712.24,
+      "text": "and after writing",
+      "timestamp_label": "11:50"
+    },
+    {
+      "id": 314,
+      "start": 712.24,
+      "end": 714.24,
+      "text": "I will write here",
+      "timestamp_label": "11:52"
+    },
+    {
+      "id": 315,
+      "start": 714.24,
+      "end": 716.24,
+      "text": "that I is less than M",
+      "timestamp_label": "11:54"
+    },
+    {
+      "id": 316,
+      "start": 716.24,
+      "end": 718.24,
+      "text": "what to do",
+      "timestamp_label": "11:56"
+    },
+    {
+      "id": 317,
+      "start": 718.24,
+      "end": 720.24,
+      "text": "keep copying the elements",
+      "timestamp_label": "11:58"
+    },
+    {
+      "id": 318,
+      "start": 720.24,
+      "end": 722.24,
+      "text": "okay, keep copying the elements",
+      "timestamp_label": "12:00"
+    },
+    {
+      "id": 319,
+      "start": 722.24,
+      "end": 724.24,
+      "text": "CK is equal to",
+      "timestamp_label": "12:02"
+    },
+    {
+      "id": 320,
+      "start": 724.24,
+      "end": 726.24,
+      "text": "what to do",
+      "timestamp_label": "12:04"
+    },
+    {
+      "id": 321,
+      "start": 726.24,
+      "end": 728.24,
+      "text": "CK is equal to A I",
+      "timestamp_label": "12:06"
+    },
+    {
+      "id": 322,
+      "start": 728.24,
+      "end": 730.24,
+      "text": "K++",
+      "timestamp_label": "12:08"
+    },
+    {
+      "id": 323,
+      "start": 730.24,
+      "end": 732.24,
+      "text": "and I plus plus",
+      "timestamp_label": "12:10"
+    },
+    {
+      "id": 324,
+      "start": 732.24,
+      "end": 734.24,
+      "text": "okay",
+      "timestamp_label": "12:12"
+    },
+    {
+      "id": 325,
+      "start": 734.24,
+      "end": 736.24,
+      "text": "I will close it here",
+      "timestamp_label": "12:14"
+    },
+    {
+      "id": 326,
+      "start": 736.24,
+      "end": 738.24,
+      "text": "so what I am saying here",
+      "timestamp_label": "12:16"
+    },
+    {
+      "id": 327,
+      "start": 738.24,
+      "end": 740.24,
+      "text": "all the elements",
+      "timestamp_label": "12:18"
+    },
+    {
+      "id": 328,
+      "start": 740.24,
+      "end": 742.24,
+      "text": "copy the previous elements",
+      "timestamp_label": "12:20"
+    },
+    {
+      "id": 329,
+      "start": 742.24,
+      "end": 744.24,
+      "text": "but the previous element is less than M",
+      "timestamp_label": "12:22"
+    },
+    {
+      "id": 330,
+      "start": 744.24,
+      "end": 746.24,
+      "text": "and similarly I will do",
+      "timestamp_label": "12:24"
+    },
+    {
+      "id": 331,
+      "start": 746.24,
+      "end": 748.24,
+      "text": "another while loop",
+      "timestamp_label": "12:26"
+    },
+    {
+      "id": 332,
+      "start": 748.24,
+      "end": 750.24,
+      "text": "J less than N",
+      "timestamp_label": "12:28"
+    },
+    {
+      "id": 333,
+      "start": 750.24,
+      "end": 752.24,
+      "text": "and what I will write in it",
+      "timestamp_label": "12:30"
+    },
+    {
+      "id": 334,
+      "start": 752.24,
+      "end": 754.24,
+      "text": "CK is equal to BJ",
+      "timestamp_label": "12:32"
+    },
+    {
+      "id": 335,
+      "start": 754.24,
+      "end": 756.24,
+      "text": "and I will write",
+      "timestamp_label": "12:34"
+    },
+    {
+      "id": 336,
+      "start": 756.24,
+      "end": 758.24,
+      "text": "J++",
+      "timestamp_label": "12:36"
+    },
+    {
+      "id": 337,
+      "start": 758.24,
+      "end": 760.24,
+      "text": "and I will explain this one more time",
+      "timestamp_label": "12:38"
+    },
+    {
+      "id": 338,
+      "start": 760.24,
+      "end": 762.24,
+      "text": "because I will not explain it once",
+      "timestamp_label": "12:40"
+    },
+    {
+      "id": 339,
+      "start": 762.24,
+      "end": 764.24,
+      "text": "what I did here",
+      "timestamp_label": "12:42"
+    },
+    {
+      "id": 340,
+      "start": 764.24,
+      "end": 766.24,
+      "text": "what I did here is",
+      "timestamp_label": "12:44"
+    },
+    {
+      "id": 341,
+      "start": 766.24,
+      "end": 768.24,
+      "text": "I will give you one more example",
+      "timestamp_label": "12:46"
+    },
+    {
+      "id": 342,
+      "start": 768.24,
+      "end": 770.24,
+      "text": "I have 7, 8 and 12",
+      "timestamp_label": "12:48"
+    },
+    {
+      "id": 343,
+      "start": 770.24,
+      "end": 772.24,
+      "text": "and 1, 2 and",
+      "timestamp_label": "12:50"
+    },
+    {
+      "id": 344,
+      "start": 772.24,
+      "end": 774.24,
+      "text": "11",
+      "timestamp_label": "12:52"
+    },
+    {
+      "id": 345,
+      "start": 774.24,
+      "end": 776.24,
+      "text": "I have to merge them and make a new area",
+      "timestamp_label": "12:54"
+    },
+    {
+      "id": 346,
+      "start": 776.24,
+      "end": 778.24,
+      "text": "so what I will do first",
+      "timestamp_label": "12:56"
+    },
+    {
+      "id": 347,
+      "start": 778.24,
+      "end": 780.24,
+      "text": "I will compare this and this",
+      "timestamp_label": "12:58"
+    },
+    {
+      "id": 348,
+      "start": 780.24,
+      "end": 782.24,
+      "text": "I will write one in the small content",
+      "timestamp_label": "13:00"
+    },
+    {
+      "id": 349,
+      "start": 782.24,
+      "end": 784.24,
+      "text": "then I will toss it",
+      "timestamp_label": "13:02"
+    },
+    {
+      "id": 350,
+      "start": 784.24,
+      "end": 786.24,
+      "text": "then I will compare 2 and 7",
+      "timestamp_label": "13:04"
+    },
+    {
+      "id": 351,
+      "start": 786.24,
+      "end": 788.24,
+      "text": "because there are 2",
+      "timestamp_label": "13:06"
+    },
+    {
+      "id": 352,
+      "start": 788.24,
+      "end": 790.24,
+      "text": "then what I will do",
+      "timestamp_label": "13:08"
+    },
+    {
+      "id": 353,
+      "start": 790.24,
+      "end": 792.24,
+      "text": "I will give 7 and 11",
+      "timestamp_label": "13:10"
+    },
+    {
+      "id": 354,
+      "start": 792.24,
+      "end": 794.24,
+      "text": "because 7 is small",
+      "timestamp_label": "13:12"
+    },
+    {
+      "id": 355,
+      "start": 794.24,
+      "end": 796.24,
+      "text": "then I will compare 8 and 11",
+      "timestamp_label": "13:14"
+    },
+    {
+      "id": 356,
+      "start": 796.24,
+      "end": 798.24,
+      "text": "8 will come",
+      "timestamp_label": "13:16"
+    },
+    {
+      "id": 357,
+      "start": 798.24,
+      "end": 800.24,
+      "text": "and this will be combined",
+      "timestamp_label": "13:18"
+    },
+    {
+      "id": 358,
+      "start": 800.24,
+      "end": 802.24,
+      "text": "then I will take 11",
+      "timestamp_label": "13:20"
+    },
+    {
+      "id": 359,
+      "start": 802.24,
+      "end": 804.24,
+      "text": "and I will combine it",
+      "timestamp_label": "13:22"
+    },
+    {
+      "id": 360,
+      "start": 804.24,
+      "end": 806.24,
+      "text": "and now because there are 12 left",
+      "timestamp_label": "13:24"
+    },
+    {
+      "id": 361,
+      "start": 806.24,
+      "end": 808.24,
+      "text": "I will copy it as is",
+      "timestamp_label": "13:26"
+    },
+    {
+      "id": 362,
+      "start": 808.24,
+      "end": 810.24,
+      "text": "so this while loop is also working",
+      "timestamp_label": "13:28"
+    },
+    {
+      "id": 363,
+      "start": 810.24,
+      "end": 812.24,
+      "text": "what is this while loop",
+      "timestamp_label": "13:30"
+    },
+    {
+      "id": 364,
+      "start": 812.24,
+      "end": 814.24,
+      "text": "copy all remaining elements",
+      "timestamp_label": "13:32"
+    },
+    {
+      "id": 365,
+      "start": 816.24,
+      "end": 818.24,
+      "text": "copy all remaining elements",
+      "timestamp_label": "13:36"
+    },
+    {
+      "id": 366,
+      "start": 822.24,
+      "end": 824.24,
+      "text": "from A",
+      "timestamp_label": "13:42"
+    },
+    {
+      "id": 367,
+      "start": 824.24,
+      "end": 826.24,
+      "text": "to C",
+      "timestamp_label": "13:44"
+    },
+    {
+      "id": 368,
+      "start": 826.24,
+      "end": 828.24,
+      "text": "and what is this copy",
+      "timestamp_label": "13:46"
+    },
+    {
+      "id": 369,
+      "start": 828.24,
+      "end": 830.24,
+      "text": "from B to C",
+      "timestamp_label": "13:48"
+    },
+    {
+      "id": 370,
+      "start": 832.24,
+      "end": 834.24,
+      "text": "I am saying this with this while loop",
+      "timestamp_label": "13:52"
+    },
+    {
+      "id": 371,
+      "start": 834.24,
+      "end": 836.24,
+      "text": "or if there are B elements left",
+      "timestamp_label": "13:54"
+    },
+    {
+      "id": 372,
+      "start": 836.24,
+      "end": 838.24,
+      "text": "then copy all the elements in C",
+      "timestamp_label": "13:56"
+    },
+    {
+      "id": 373,
+      "start": 838.24,
+      "end": 840.24,
+      "text": "and if there are A elements left",
+      "timestamp_label": "13:58"
+    },
+    {
+      "id": 374,
+      "start": 840.24,
+      "end": 842.24,
+      "text": "then copy all the elements in C",
+      "timestamp_label": "14:00"
+    },
+    {
+      "id": 375,
+      "start": 842.24,
+      "end": 844.24,
+      "text": "as it is",
+      "timestamp_label": "14:02"
+    },
+    {
+      "id": 376,
+      "start": 844.24,
+      "end": 846.24,
+      "text": "so I have shown you this example",
+      "timestamp_label": "14:04"
+    },
+    {
+      "id": 377,
+      "start": 846.24,
+      "end": 848.24,
+      "text": "now I will show you another example",
+      "timestamp_label": "14:06"
+    },
+    {
+      "id": 378,
+      "start": 848.24,
+      "end": 850.24,
+      "text": "I will quickly erase this",
+      "timestamp_label": "14:08"
+    },
+    {
+      "id": 379,
+      "start": 850.24,
+      "end": 852.24,
+      "text": "and after that I will show you another example",
+      "timestamp_label": "14:10"
+    },
+    {
+      "id": 380,
+      "start": 852.24,
+      "end": 854.24,
+      "text": "and in that example",
+      "timestamp_label": "14:12"
+    },
+    {
+      "id": 381,
+      "start": 854.24,
+      "end": 856.24,
+      "text": "what I will do is I will take some small elements",
+      "timestamp_label": "14:14"
+    },
+    {
+      "id": 382,
+      "start": 856.24,
+      "end": 858.24,
+      "text": "like 2, 4 and 5",
+      "timestamp_label": "14:16"
+    },
+    {
+      "id": 383,
+      "start": 858.24,
+      "end": 860.24,
+      "text": "and here I will take",
+      "timestamp_label": "14:18"
+    },
+    {
+      "id": 384,
+      "start": 860.24,
+      "end": 862.24,
+      "text": "40, 50 and",
+      "timestamp_label": "14:20"
+    },
+    {
+      "id": 385,
+      "start": 862.24,
+      "end": 864.24,
+      "text": "let us say 80",
+      "timestamp_label": "14:22"
+    },
+    {
+      "id": 386,
+      "start": 864.24,
+      "end": 866.24,
+      "text": "so we will compare this and this",
+      "timestamp_label": "14:24"
+    },
+    {
+      "id": 387,
+      "start": 866.24,
+      "end": 868.24,
+      "text": "obviously 2 is small so 2 will come",
+      "timestamp_label": "14:26"
+    },
+    {
+      "id": 388,
+      "start": 868.24,
+      "end": 870.24,
+      "text": "and if we do 4 and 4 will come",
+      "timestamp_label": "14:28"
+    },
+    {
+      "id": 389,
+      "start": 870.24,
+      "end": 872.24,
+      "text": "5 and 4 will come",
+      "timestamp_label": "14:30"
+    },
+    {
+      "id": 390,
+      "start": 872.24,
+      "end": 874.24,
+      "text": "and 5 will come",
+      "timestamp_label": "14:32"
+    },
+    {
+      "id": 391,
+      "start": 874.24,
+      "end": 876.24,
+      "text": "now because this error is over",
+      "timestamp_label": "14:34"
+    },
+    {
+      "id": 392,
+      "start": 876.24,
+      "end": 878.24,
+      "text": "so what will happen is",
+      "timestamp_label": "14:36"
+    },
+    {
+      "id": 393,
+      "start": 878.24,
+      "end": 880.24,
+      "text": "our I value will fall",
+      "timestamp_label": "14:38"
+    },
+    {
+      "id": 394,
+      "start": 880.24,
+      "end": 882.24,
+      "text": "less than M condition",
+      "timestamp_label": "14:40"
+    },
+    {
+      "id": 395,
+      "start": 882.24,
+      "end": 884.24,
+      "text": "will fall less than M condition",
+      "timestamp_label": "14:42"
+    },
+    {
+      "id": 396,
+      "start": 884.24,
+      "end": 886.24,
+      "text": "so I will copy all J elements as it is",
+      "timestamp_label": "14:44"
+    },
+    {
+      "id": 397,
+      "start": 886.24,
+      "end": 888.24,
+      "text": "so I will write",
+      "timestamp_label": "14:46"
+    },
+    {
+      "id": 398,
+      "start": 888.24,
+      "end": 890.24,
+      "text": "40, 50, 80",
+      "timestamp_label": "14:48"
+    },
+    {
+      "id": 399,
+      "start": 890.24,
+      "end": 892.24,
+      "text": "so these while loops are doing this",
+      "timestamp_label": "14:50"
+    },
+    {
+      "id": 400,
+      "start": 892.24,
+      "end": 894.24,
+      "text": "if there are A elements left",
+      "timestamp_label": "14:52"
+    },
+    {
+      "id": 401,
+      "start": 894.24,
+      "end": 896.24,
+      "text": "then this while loop is copying",
+      "timestamp_label": "14:54"
+    },
+    {
+      "id": 402,
+      "start": 896.24,
+      "end": 898.24,
+      "text": "I hope you understood",
+      "timestamp_label": "14:56"
+    },
+    {
+      "id": 403,
+      "start": 898.24,
+      "end": 900.24,
+      "text": "the merging procedure",
+      "timestamp_label": "14:58"
+    },
+    {
+      "id": 404,
+      "start": 900.24,
+      "end": 902.24,
+      "text": "now what we will do is",
+      "timestamp_label": "15:00"
+    },
+    {
+      "id": 405,
+      "start": 902.24,
+      "end": 904.24,
+      "text": "we have written the merging procedure",
+      "timestamp_label": "15:02"
+    },
+    {
+      "id": 406,
+      "start": 904.24,
+      "end": 906.24,
+      "text": "you understood this very well",
+      "timestamp_label": "15:04"
+    },
+    {
+      "id": 407,
+      "start": 906.24,
+      "end": 908.24,
+      "text": "I know that",
+      "timestamp_label": "15:06"
+    },
+    {
+      "id": 408,
+      "start": 908.24,
+      "end": 910.24,
+      "text": "now I will tell you",
+      "timestamp_label": "15:08"
+    },
+    {
+      "id": 409,
+      "start": 910.24,
+      "end": 912.24,
+      "text": "if you want to merge in one array",
+      "timestamp_label": "15:10"
+    },
+    {
+      "id": 410,
+      "start": 912.24,
+      "end": 914.24,
+      "text": "then how will you do it",
+      "timestamp_label": "15:12"
+    },
+    {
+      "id": 411,
+      "start": 914.24,
+      "end": 916.24,
+      "text": "you have merged in one array",
+      "timestamp_label": "15:14"
+    },
+    {
+      "id": 412,
+      "start": 916.24,
+      "end": 918.24,
+      "text": "what is this",
+      "timestamp_label": "15:16"
+    },
+    {
+      "id": 413,
+      "start": 918.24,
+      "end": 920.24,
+      "text": "so I will tell you the merging in one array",
+      "timestamp_label": "15:18"
+    },
+    {
+      "id": 414,
+      "start": 920.24,
+      "end": 922.24,
+      "text": "so guys now let us see",
+      "timestamp_label": "15:20"
+    },
+    {
+      "id": 415,
+      "start": 922.24,
+      "end": 924.24,
+      "text": "merging in a single array",
+      "timestamp_label": "15:22"
+    },
+    {
+      "id": 416,
+      "start": 924.24,
+      "end": 926.24,
+      "text": "and for that I will do",
+      "timestamp_label": "15:24"
+    },
+    {
+      "id": 417,
+      "start": 926.24,
+      "end": 928.24,
+      "text": "whatever I made here",
+      "timestamp_label": "15:26"
+    },
+    {
+      "id": 418,
+      "start": 928.24,
+      "end": 930.24,
+      "text": "and in fact I will delete",
+      "timestamp_label": "15:28"
+    },
+    {
+      "id": 419,
+      "start": 930.24,
+      "end": 932.24,
+      "text": "the other array",
+      "timestamp_label": "15:30"
+    },
+    {
+      "id": 420,
+      "start": 932.24,
+      "end": 934.24,
+      "text": "so I will delete it here",
+      "timestamp_label": "15:32"
+    },
+    {
+      "id": 421,
+      "start": 934.24,
+      "end": 936.24,
+      "text": "so I will select it and delete it here",
+      "timestamp_label": "15:34"
+    },
+    {
+      "id": 422,
+      "start": 936.24,
+      "end": 938.24,
+      "text": "and you guys only",
+      "timestamp_label": "15:36"
+    },
+    {
+      "id": 423,
+      "start": 938.24,
+      "end": 940.24,
+      "text": "how I will tell you how to merge in one array",
+      "timestamp_label": "15:38"
+    },
+    {
+      "id": 424,
+      "start": 940.24,
+      "end": 942.24,
+      "text": "so I will enlarge it a little and bring it down",
+      "timestamp_label": "15:40"
+    },
+    {
+      "id": 425,
+      "start": 942.24,
+      "end": 944.24,
+      "text": "and I will delete it",
+      "timestamp_label": "15:42"
+    },
+    {
+      "id": 426,
+      "start": 944.24,
+      "end": 946.24,
+      "text": "suppose I have a single array",
+      "timestamp_label": "15:44"
+    },
+    {
+      "id": 427,
+      "start": 946.24,
+      "end": 948.24,
+      "text": "and this single array has some elements",
+      "timestamp_label": "15:46"
+    },
+    {
+      "id": 428,
+      "start": 948.24,
+      "end": 950.24,
+      "text": "that is 7,",
+      "timestamp_label": "15:48"
+    },
+    {
+      "id": 429,
+      "start": 950.24,
+      "end": 952.24,
+      "text": "15",
+      "timestamp_label": "15:50"
+    },
+    {
+      "id": 430,
+      "start": 952.24,
+      "end": 954.24,
+      "text": "so 18",
+      "timestamp_label": "15:52"
+    },
+    {
+      "id": 431,
+      "start": 954.24,
+      "end": 956.24,
+      "text": "and then 22 and 80",
+      "timestamp_label": "15:54"
+    },
+    {
+      "id": 432,
+      "start": 956.24,
+      "end": 958.24,
+      "text": "this is a sorted array",
+      "timestamp_label": "15:56"
+    },
+    {
+      "id": 433,
+      "start": 958.24,
+      "end": 960.24,
+      "text": "now this is a sorted array",
+      "timestamp_label": "15:58"
+    },
+    {
+      "id": 434,
+      "start": 960.24,
+      "end": 962.24,
+      "text": "so I don't need to sort it out more",
+      "timestamp_label": "16:00"
+    },
+    {
+      "id": 435,
+      "start": 962.24,
+      "end": 964.24,
+      "text": "but suppose I have two different sorted arrays",
+      "timestamp_label": "16:02"
+    },
+    {
+      "id": 436,
+      "start": 964.24,
+      "end": 966.24,
+      "text": "that is I have",
+      "timestamp_label": "16:04"
+    },
+    {
+      "id": 437,
+      "start": 966.24,
+      "end": 968.24,
+      "text": "7, 15 is a sorted array",
+      "timestamp_label": "16:06"
+    },
+    {
+      "id": 438,
+      "start": 968.24,
+      "end": 970.24,
+      "text": "and after that I have",
+      "timestamp_label": "16:08"
+    },
+    {
+      "id": 439,
+      "start": 970.24,
+      "end": 972.24,
+      "text": "a sorted array from here",
+      "timestamp_label": "16:10"
+    },
+    {
+      "id": 440,
+      "start": 972.24,
+      "end": 974.24,
+      "text": "that is in one array I have two sorted arrays",
+      "timestamp_label": "16:12"
+    },
+    {
+      "id": 441,
+      "start": 974.24,
+      "end": 976.24,
+      "text": "I will write it here",
+      "timestamp_label": "16:14"
+    },
+    {
+      "id": 442,
+      "start": 976.24,
+      "end": 978.24,
+      "text": "2, 8",
+      "timestamp_label": "16:16"
+    },
+    {
+      "id": 443,
+      "start": 978.24,
+      "end": 980.24,
+      "text": "and 10",
+      "timestamp_label": "16:18"
+    },
+    {
+      "id": 444,
+      "start": 980.24,
+      "end": 982.24,
+      "text": "so this is a sorted array",
+      "timestamp_label": "16:20"
+    },
+    {
+      "id": 445,
+      "start": 982.24,
+      "end": 984.24,
+      "text": "and this is a sorted array",
+      "timestamp_label": "16:22"
+    },
+    {
+      "id": 446,
+      "start": 984.24,
+      "end": 986.24,
+      "text": "and I want to merge them",
+      "timestamp_label": "16:24"
+    },
+    {
+      "id": 447,
+      "start": 986.24,
+      "end": 988.24,
+      "text": "in a new array",
+      "timestamp_label": "16:26"
+    },
+    {
+      "id": 448,
+      "start": 988.24,
+      "end": 990.24,
+      "text": "so how I will do it",
+      "timestamp_label": "16:28"
+    },
+    {
+      "id": 449,
+      "start": 990.24,
+      "end": 992.24,
+      "text": "you will see here",
+      "timestamp_label": "16:30"
+    },
+    {
+      "id": 450,
+      "start": 992.24,
+      "end": 994.24,
+      "text": "to merge in a new array",
+      "timestamp_label": "16:32"
+    },
+    {
+      "id": 451,
+      "start": 994.24,
+      "end": 996.24,
+      "text": "I will write",
+      "timestamp_label": "16:34"
+    },
+    {
+      "id": 452,
+      "start": 996.24,
+      "end": 998.24,
+      "text": "that what is my merge procedure",
+      "timestamp_label": "16:36"
+    },
+    {
+      "id": 453,
+      "start": 998.24,
+      "end": 1000.24,
+      "text": "I want",
+      "timestamp_label": "16:38"
+    },
+    {
+      "id": 454,
+      "start": 1000.24,
+      "end": 1002.24,
+      "text": "to make changes in the same array",
+      "timestamp_label": "16:40"
+    },
+    {
+      "id": 455,
+      "start": 1002.24,
+      "end": 1004.24,
+      "text": "or make an auxiliary array",
+      "timestamp_label": "16:42"
+    },
+    {
+      "id": 456,
+      "start": 1004.24,
+      "end": 1006.24,
+      "text": "now I can't make changes in the same array",
+      "timestamp_label": "16:44"
+    },
+    {
+      "id": 457,
+      "start": 1006.24,
+      "end": 1008.24,
+      "text": "I will make changes in an auxiliary array",
+      "timestamp_label": "16:46"
+    },
+    {
+      "id": 458,
+      "start": 1008.24,
+      "end": 1010.24,
+      "text": "that is I will make",
+      "timestamp_label": "16:48"
+    },
+    {
+      "id": 459,
+      "start": 1010.24,
+      "end": 1012.24,
+      "text": "another array here",
+      "timestamp_label": "16:50"
+    },
+    {
+      "id": 460,
+      "start": 1012.24,
+      "end": 1014.24,
+      "text": "so I will make another array here",
+      "timestamp_label": "16:52"
+    },
+    {
+      "id": 461,
+      "start": 1014.24,
+      "end": 1016.24,
+      "text": "and this array",
+      "timestamp_label": "16:54"
+    },
+    {
+      "id": 462,
+      "start": 1016.24,
+      "end": 1018.24,
+      "text": "I will keep it here",
+      "timestamp_label": "16:56"
+    },
+    {
+      "id": 463,
+      "start": 1018.24,
+      "end": 1020.24,
+      "text": "and I want",
+      "timestamp_label": "16:58"
+    },
+    {
+      "id": 464,
+      "start": 1020.24,
+      "end": 1022.24,
+      "text": "to merge these two arrays",
+      "timestamp_label": "17:00"
+    },
+    {
+      "id": 465,
+      "start": 1022.24,
+      "end": 1024.24,
+      "text": "and take it in this array",
+      "timestamp_label": "17:02"
+    },
+    {
+      "id": 466,
+      "start": 1024.24,
+      "end": 1026.24,
+      "text": "so let's see how it will work",
+      "timestamp_label": "17:04"
+    },
+    {
+      "id": 467,
+      "start": 1026.24,
+      "end": 1028.24,
+      "text": "the first thing is",
+      "timestamp_label": "17:06"
+    },
+    {
+      "id": 468,
+      "start": 1028.24,
+      "end": 1030.24,
+      "text": "I should know how much",
+      "timestamp_label": "17:08"
+    },
+    {
+      "id": 469,
+      "start": 1030.24,
+      "end": 1032.24,
+      "text": "my elements are sorted",
+      "timestamp_label": "17:10"
+    },
+    {
+      "id": 470,
+      "start": 1032.24,
+      "end": 1034.24,
+      "text": "so I know that 0, 1, 2, 3, 4",
+      "timestamp_label": "17:12"
+    },
+    {
+      "id": 471,
+      "start": 1034.24,
+      "end": 1036.24,
+      "text": "0, 1, 2, 3, 4",
+      "timestamp_label": "17:14"
+    },
+    {
+      "id": 472,
+      "start": 1036.24,
+      "end": 1038.24,
+      "text": "0, 1, 2, 3, 4 are given here",
+      "timestamp_label": "17:16"
+    },
+    {
+      "id": 473,
+      "start": 1038.24,
+      "end": 1040.24,
+      "text": "I know that",
+      "timestamp_label": "17:18"
+    },
+    {
+      "id": 474,
+      "start": 1040.24,
+      "end": 1042.24,
+      "text": "0, 1 is sorted, 2, 3, 4 are sorted",
+      "timestamp_label": "17:20"
+    },
+    {
+      "id": 475,
+      "start": 1042.24,
+      "end": 1044.24,
+      "text": "so I will",
+      "timestamp_label": "17:22"
+    },
+    {
+      "id": 476,
+      "start": 1044.24,
+      "end": 1046.24,
+      "text": "make this array",
+      "timestamp_label": "17:24"
+    },
+    {
+      "id": 477,
+      "start": 1046.24,
+      "end": 1048.24,
+      "text": "ok",
+      "timestamp_label": "17:26"
+    },
+    {
+      "id": 478,
+      "start": 1048.24,
+      "end": 1050.24,
+      "text": "I will make this array high",
+      "timestamp_label": "17:28"
+    },
+    {
+      "id": 479,
+      "start": 1050.24,
+      "end": 1052.24,
+      "text": "ok",
+      "timestamp_label": "17:30"
+    },
+    {
+      "id": 480,
+      "start": 1052.24,
+      "end": 1054.24,
+      "text": "and here I will draw a line",
+      "timestamp_label": "17:32"
+    },
+    {
+      "id": 481,
+      "start": 1054.24,
+      "end": 1056.24,
+      "text": "that these two are sorted",
+      "timestamp_label": "17:34"
+    },
+    {
+      "id": 482,
+      "start": 1056.24,
+      "end": 1058.24,
+      "text": "so I will draw a line here",
+      "timestamp_label": "17:36"
+    },
+    {
+      "id": 483,
+      "start": 1058.24,
+      "end": 1060.24,
+      "text": "and I will make this array mid",
+      "timestamp_label": "17:38"
+    },
+    {
+      "id": 484,
+      "start": 1060.24,
+      "end": 1062.24,
+      "text": "ok",
+      "timestamp_label": "17:40"
+    },
+    {
+      "id": 485,
+      "start": 1062.24,
+      "end": 1064.24,
+      "text": "and now I want to write",
+      "timestamp_label": "17:42"
+    },
+    {
+      "id": 486,
+      "start": 1064.24,
+      "end": 1066.24,
+      "text": "a procedure that I want to write",
+      "timestamp_label": "17:44"
+    },
+    {
+      "id": 487,
+      "start": 1066.24,
+      "end": 1068.24,
+      "text": "that will merge these two",
+      "timestamp_label": "17:46"
+    },
+    {
+      "id": 488,
+      "start": 1068.24,
+      "end": 1070.24,
+      "text": "basically I want to write a merging procedure",
+      "timestamp_label": "17:48"
+    },
+    {
+      "id": 489,
+      "start": 1070.24,
+      "end": 1072.24,
+      "text": "these two sorted arrays",
+      "timestamp_label": "17:50"
+    },
+    {
+      "id": 490,
+      "start": 1072.24,
+      "end": 1074.24,
+      "text": "I want to merge them in one single array",
+      "timestamp_label": "17:52"
+    },
+    {
+      "id": 491,
+      "start": 1074.24,
+      "end": 1076.24,
+      "text": "so first I was merging A and B in C",
+      "timestamp_label": "17:54"
+    },
+    {
+      "id": 492,
+      "start": 1076.24,
+      "end": 1078.24,
+      "text": "now what I am doing",
+      "timestamp_label": "17:56"
+    },
+    {
+      "id": 493,
+      "start": 1078.24,
+      "end": 1080.24,
+      "text": "one part",
+      "timestamp_label": "17:58"
+    },
+    {
+      "id": 494,
+      "start": 1080.24,
+      "end": 1082.24,
+      "text": "and one part",
+      "timestamp_label": "18:00"
+    },
+    {
+      "id": 495,
+      "start": 1082.24,
+      "end": 1084.24,
+      "text": "I am merging them in B",
+      "timestamp_label": "18:02"
+    },
+    {
+      "id": 496,
+      "start": 1084.24,
+      "end": 1086.24,
+      "text": "and I will consider it as A",
+      "timestamp_label": "18:04"
+    },
+    {
+      "id": 497,
+      "start": 1086.24,
+      "end": 1088.24,
+      "text": "so how will things change here",
+      "timestamp_label": "18:06"
+    },
+    {
+      "id": 498,
+      "start": 1088.24,
+      "end": 1090.24,
+      "text": "I don't have C yet, I don't have B",
+      "timestamp_label": "18:08"
+    },
+    {
+      "id": 499,
+      "start": 1090.24,
+      "end": 1092.24,
+      "text": "I have A and what I have got",
+      "timestamp_label": "18:10"
+    },
+    {
+      "id": 500,
+      "start": 1092.24,
+      "end": 1094.24,
+      "text": "I have got",
+      "timestamp_label": "18:12"
+    },
+    {
+      "id": 501,
+      "start": 1094.24,
+      "end": 1096.24,
+      "text": "mid, low and high",
+      "timestamp_label": "18:14"
+    },
+    {
+      "id": 502,
+      "start": 1096.24,
+      "end": 1098.24,
+      "text": "ok",
+      "timestamp_label": "18:16"
+    },
+    {
+      "id": 503,
+      "start": 1098.24,
+      "end": 1100.24,
+      "text": "A and mid, low and high",
+      "timestamp_label": "18:18"
+    },
+    {
+      "id": 504,
+      "start": 1100.24,
+      "end": 1102.24,
+      "text": "ok I have got this",
+      "timestamp_label": "18:20"
+    },
+    {
+      "id": 505,
+      "start": 1102.24,
+      "end": 1104.24,
+      "text": "A and mid, I will erase it",
+      "timestamp_label": "18:22"
+    },
+    {
+      "id": 506,
+      "start": 1104.24,
+      "end": 1106.24,
+      "text": "I have shown you this by merging",
+      "timestamp_label": "18:24"
+    },
+    {
+      "id": 507,
+      "start": 1106.24,
+      "end": 1108.24,
+      "text": "A and mid, low and high",
+      "timestamp_label": "18:26"
+    },
+    {
+      "id": 508,
+      "start": 1108.24,
+      "end": 1110.24,
+      "text": "ok",
+      "timestamp_label": "18:28"
+    },
+    {
+      "id": 509,
+      "start": 1110.24,
+      "end": 1112.24,
+      "text": "let's zoom in here",
+      "timestamp_label": "18:30"
+    },
+    {
+      "id": 510,
+      "start": 1112.24,
+      "end": 1114.24,
+      "text": "to understand",
+      "timestamp_label": "18:32"
+    },
+    {
+      "id": 511,
+      "start": 1114.24,
+      "end": 1116.24,
+      "text": "A, mid, low",
+      "timestamp_label": "18:34"
+    },
+    {
+      "id": 512,
+      "start": 1116.24,
+      "end": 1118.24,
+      "text": "I will write low here",
+      "timestamp_label": "18:36"
+    },
+    {
+      "id": 513,
+      "start": 1118.24,
+      "end": 1120.24,
+      "text": "and high I have got",
+      "timestamp_label": "18:38"
+    },
+    {
+      "id": 514,
+      "start": 1120.24,
+      "end": 1122.24,
+      "text": "mid, high and low",
+      "timestamp_label": "18:40"
+    },
+    {
+      "id": 515,
+      "start": 1122.24,
+      "end": 1124.24,
+      "text": "and A I have got",
+      "timestamp_label": "18:42"
+    },
+    {
+      "id": 516,
+      "start": 1124.24,
+      "end": 1126.24,
+      "text": "now what I will do here",
+      "timestamp_label": "18:44"
+    },
+    {
+      "id": 517,
+      "start": 1126.24,
+      "end": 1128.24,
+      "text": "I, J and K will make it like this",
+      "timestamp_label": "18:46"
+    },
+    {
+      "id": 518,
+      "start": 1128.24,
+      "end": 1130.24,
+      "text": "I will initialize it from low",
+      "timestamp_label": "18:48"
+    },
+    {
+      "id": 519,
+      "start": 1130.24,
+      "end": 1132.24,
+      "text": "ok, I will initialize it from low",
+      "timestamp_label": "18:50"
+    },
+    {
+      "id": 520,
+      "start": 1132.24,
+      "end": 1134.24,
+      "text": "J will do it",
+      "timestamp_label": "18:52"
+    },
+    {
+      "id": 521,
+      "start": 1134.24,
+      "end": 1136.24,
+      "text": "J will do it from mid",
+      "timestamp_label": "18:54"
+    },
+    {
+      "id": 522,
+      "start": 1136.24,
+      "end": 1138.24,
+      "text": "ok, J here I am doing",
+      "timestamp_label": "18:56"
+    },
+    {
+      "id": 523,
+      "start": 1138.24,
+      "end": 1140.24,
+      "text": "but I will not do J from mid",
+      "timestamp_label": "18:58"
+    },
+    {
+      "id": 524,
+      "start": 1140.24,
+      "end": 1142.24,
+      "text": "I want this array here J, so mid plus 1",
+      "timestamp_label": "19:00"
+    },
+    {
+      "id": 525,
+      "start": 1142.24,
+      "end": 1144.24,
+      "text": "and the value of K here",
+      "timestamp_label": "19:02"
+    },
+    {
+      "id": 526,
+      "start": 1144.24,
+      "end": 1146.24,
+      "text": "will be equal to low K",
+      "timestamp_label": "19:04"
+    },
+    {
+      "id": 527,
+      "start": 1146.24,
+      "end": 1148.24,
+      "text": "so K is equal to low",
+      "timestamp_label": "19:06"
+    },
+    {
+      "id": 528,
+      "start": 1148.24,
+      "end": 1150.24,
+      "text": "I will write the initializing conditions here",
+      "timestamp_label": "19:08"
+    },
+    {
+      "id": 529,
+      "start": 1150.24,
+      "end": 1152.24,
+      "text": "I will write them here quickly",
+      "timestamp_label": "19:10"
+    },
+    {
+      "id": 530,
+      "start": 1152.24,
+      "end": 1154.24,
+      "text": "and what I will do here",
+      "timestamp_label": "19:12"
+    },
+    {
+      "id": 531,
+      "start": 1154.24,
+      "end": 1156.24,
+      "text": "first I will write",
+      "timestamp_label": "19:14"
+    },
+    {
+      "id": 532,
+      "start": 1156.24,
+      "end": 1158.24,
+      "text": "that the value of I will be equal to low",
+      "timestamp_label": "19:16"
+    },
+    {
+      "id": 533,
+      "start": 1158.24,
+      "end": 1160.24,
+      "text": "so I will write I is equal to low",
+      "timestamp_label": "19:18"
+    },
+    {
+      "id": 534,
+      "start": 1160.24,
+      "end": 1162.24,
+      "text": "after that I will write",
+      "timestamp_label": "19:20"
+    },
+    {
+      "id": 535,
+      "start": 1162.24,
+      "end": 1164.24,
+      "text": "J is equal to mid plus 1",
+      "timestamp_label": "19:22"
+    },
+    {
+      "id": 536,
+      "start": 1164.24,
+      "end": 1166.24,
+      "text": "ok and K is equal to",
+      "timestamp_label": "19:24"
+    },
+    {
+      "id": 537,
+      "start": 1166.24,
+      "end": 1168.24,
+      "text": "low",
+      "timestamp_label": "19:26"
+    },
+    {
+      "id": 538,
+      "start": 1168.24,
+      "end": 1170.24,
+      "text": "so I, J and K I have initialized",
+      "timestamp_label": "19:28"
+    },
+    {
+      "id": 539,
+      "start": 1170.24,
+      "end": 1172.24,
+      "text": "now here",
+      "timestamp_label": "19:30"
+    },
+    {
+      "id": 540,
+      "start": 1172.24,
+      "end": 1174.24,
+      "text": "we were saying I is less than mid",
+      "timestamp_label": "19:32"
+    },
+    {
+      "id": 541,
+      "start": 1174.24,
+      "end": 1176.24,
+      "text": "now what we will say",
+      "timestamp_label": "19:34"
+    },
+    {
+      "id": 542,
+      "start": 1176.24,
+      "end": 1178.24,
+      "text": "I is less than mid",
+      "timestamp_label": "19:36"
+    },
+    {
+      "id": 543,
+      "start": 1178.24,
+      "end": 1180.24,
+      "text": "ok, I less than",
+      "timestamp_label": "19:38"
+    },
+    {
+      "id": 544,
+      "start": 1180.24,
+      "end": 1182.24,
+      "text": "we were saying M",
+      "timestamp_label": "19:40"
+    },
+    {
+      "id": 545,
+      "start": 1182.24,
+      "end": 1184.24,
+      "text": "now we will say I is less than mid",
+      "timestamp_label": "19:42"
+    },
+    {
+      "id": 546,
+      "start": 1184.24,
+      "end": 1186.24,
+      "text": "so I",
+      "timestamp_label": "19:44"
+    },
+    {
+      "id": 547,
+      "start": 1186.24,
+      "end": 1188.24,
+      "text": "I will make it mid",
+      "timestamp_label": "19:46"
+    },
+    {
+      "id": 548,
+      "start": 1188.24,
+      "end": 1190.24,
+      "text": "and J is less than",
+      "timestamp_label": "19:48"
+    },
+    {
+      "id": 549,
+      "start": 1190.24,
+      "end": 1192.24,
+      "text": "what will happen? J is less than high",
+      "timestamp_label": "19:50"
+    },
+    {
+      "id": 550,
+      "start": 1192.24,
+      "end": 1194.24,
+      "text": "ok, so what I have written here",
+      "timestamp_label": "19:52"
+    },
+    {
+      "id": 551,
+      "start": 1194.24,
+      "end": 1196.24,
+      "text": "I will make it high",
+      "timestamp_label": "19:54"
+    },
+    {
+      "id": 552,
+      "start": 1196.24,
+      "end": 1198.24,
+      "text": "so I will make it high",
+      "timestamp_label": "19:56"
+    },
+    {
+      "id": 553,
+      "start": 1198.24,
+      "end": 1200.24,
+      "text": "because I want to start from here",
+      "timestamp_label": "19:58"
+    },
+    {
+      "id": 554,
+      "start": 1200.24,
+      "end": 1202.24,
+      "text": "I want to start from here",
+      "timestamp_label": "20:00"
+    },
+    {
+      "id": 555,
+      "start": 1202.24,
+      "end": 1204.24,
+      "text": "and I want to start from here",
+      "timestamp_label": "20:02"
+    },
+    {
+      "id": 556,
+      "start": 1204.24,
+      "end": 1206.24,
+      "text": "and I want to increase it to here",
+      "timestamp_label": "20:04"
+    },
+    {
+      "id": 557,
+      "start": 1206.24,
+      "end": 1208.24,
+      "text": "I want to increase it to here",
+      "timestamp_label": "20:06"
+    },
+    {
+      "id": 558,
+      "start": 1208.24,
+      "end": 1210.24,
+      "text": "and start from here and I want to increase it to here",
+      "timestamp_label": "20:08"
+    },
+    {
+      "id": 559,
+      "start": 1210.24,
+      "end": 1212.24,
+      "text": "ok, so K will go to the end",
+      "timestamp_label": "20:10"
+    },
+    {
+      "id": 560,
+      "start": 1212.24,
+      "end": 1214.24,
+      "text": "ok, so what I will do now",
+      "timestamp_label": "20:12"
+    },
+    {
+      "id": 561,
+      "start": 1214.24,
+      "end": 1216.24,
+      "text": "that I, J, K I have written",
+      "timestamp_label": "20:14"
+    },
+    {
+      "id": 562,
+      "start": 1216.24,
+      "end": 1218.24,
+      "text": "now I have written",
+      "timestamp_label": "20:16"
+    },
+    {
+      "id": 563,
+      "start": 1218.24,
+      "end": 1220.24,
+      "text": "while I, I less than",
+      "timestamp_label": "20:18"
+    },
+    {
+      "id": 564,
+      "start": 1220.24,
+      "end": 1222.24,
+      "text": "B, J I am not comparing",
+      "timestamp_label": "20:20"
+    },
+    {
+      "id": 565,
+      "start": 1222.24,
+      "end": 1224.24,
+      "text": "with B, J I am comparing",
+      "timestamp_label": "20:22"
+    },
+    {
+      "id": 566,
+      "start": 1224.24,
+      "end": 1226.24,
+      "text": "with A, J so I will",
+      "timestamp_label": "20:24"
+    },
+    {
+      "id": 567,
+      "start": 1226.24,
+      "end": 1228.24,
+      "text": "write I is less than A, J here",
+      "timestamp_label": "20:26"
+    },
+    {
+      "id": 568,
+      "start": 1228.24,
+      "end": 1230.24,
+      "text": "I is less than A, J",
+      "timestamp_label": "20:28"
+    },
+    {
+      "id": 569,
+      "start": 1230.24,
+      "end": 1232.24,
+      "text": "ok, I",
+      "timestamp_label": "20:30"
+    },
+    {
+      "id": 570,
+      "start": 1232.24,
+      "end": 1234.24,
+      "text": "write I is less than A, J here",
+      "timestamp_label": "20:32"
+    },
+    {
+      "id": 571,
+      "start": 1234.24,
+      "end": 1236.24,
+      "text": "and along with that",
+      "timestamp_label": "20:34"
+    },
+    {
+      "id": 572,
+      "start": 1236.24,
+      "end": 1238.24,
+      "text": "I will write",
+      "timestamp_label": "20:36"
+    },
+    {
+      "id": 573,
+      "start": 1238.24,
+      "end": 1240.24,
+      "text": "Ck is equal to A i",
+      "timestamp_label": "20:38"
+    },
+    {
+      "id": 574,
+      "start": 1240.24,
+      "end": 1242.24,
+      "text": "I will write Bk is equal to A i",
+      "timestamp_label": "20:40"
+    },
+    {
+      "id": 575,
+      "start": 1242.24,
+      "end": 1244.24,
+      "text": "ok, I will put it in B",
+      "timestamp_label": "20:42"
+    },
+    {
+      "id": 576,
+      "start": 1244.24,
+      "end": 1246.24,
+      "text": "so I will write Bk is equal to A i",
+      "timestamp_label": "20:44"
+    },
+    {
+      "id": 577,
+      "start": 1246.24,
+      "end": 1248.24,
+      "text": "so I will write",
+      "timestamp_label": "20:46"
+    },
+    {
+      "id": 578,
+      "start": 1248.24,
+      "end": 1250.24,
+      "text": "Ck is equal to A i",
+      "timestamp_label": "20:48"
+    },
+    {
+      "id": 579,
+      "start": 1250.24,
+      "end": 1252.24,
+      "text": "Bk is equal to A i",
+      "timestamp_label": "20:50"
+    },
+    {
+      "id": 580,
+      "start": 1252.24,
+      "end": 1254.24,
+      "text": "and everything else will be ok",
+      "timestamp_label": "20:52"
+    },
+    {
+      "id": 581,
+      "start": 1254.24,
+      "end": 1256.24,
+      "text": "same will be I plus, plus, K plus, plus",
+      "timestamp_label": "20:54"
+    },
+    {
+      "id": 582,
+      "start": 1256.24,
+      "end": 1258.24,
+      "text": "and here also same will change",
+      "timestamp_label": "20:56"
+    },
+    {
+      "id": 583,
+      "start": 1258.24,
+      "end": 1260.24,
+      "text": "Bk is equal to A i",
+      "timestamp_label": "20:58"
+    },
+    {
+      "id": 584,
+      "start": 1260.24,
+      "end": 1268.24,
+      "text": "I am putting it in A, BK is equal to AI, BK is equal to AIE, and here BK is equal to AJ.",
+      "timestamp_label": "21:00"
+    },
+    {
+      "id": 585,
+      "start": 1268.24,
+      "end": 1274.24,
+      "text": "So here you understand what the change is because I am comparing it in this area and putting it in the other area.",
+      "timestamp_label": "21:08"
+    },
+    {
+      "id": 586,
+      "start": 1274.24,
+      "end": 1280.24,
+      "text": "So I will write something like this, BK is equal to AJ.",
+      "timestamp_label": "21:14"
+    },
+    {
+      "id": 587,
+      "start": 1280.24,
+      "end": 1283.24,
+      "text": "And I did J++ and K++.",
+      "timestamp_label": "21:20"
+    },
+    {
+      "id": 588,
+      "start": 1283.24,
+      "end": 1285.24,
+      "text": "I think it is still right.",
+      "timestamp_label": "21:23"
+    },
+    {
+      "id": 589,
+      "start": 1285.24,
+      "end": 1289.24,
+      "text": "If I talk about the changes below, then where was my while loop going?",
+      "timestamp_label": "21:25"
+    },
+    {
+      "id": 590,
+      "start": 1289.24,
+      "end": 1290.24,
+      "text": "Where was it going?",
+      "timestamp_label": "21:29"
+    },
+    {
+      "id": 591,
+      "start": 1290.24,
+      "end": 1293.24,
+      "text": "Earlier it was going to M, now where will it go?",
+      "timestamp_label": "21:30"
+    },
+    {
+      "id": 592,
+      "start": 1293.24,
+      "end": 1295.24,
+      "text": "Now it will go to mid.",
+      "timestamp_label": "21:33"
+    },
+    {
+      "id": 593,
+      "start": 1295.24,
+      "end": 1301.24,
+      "text": "Okay, I will go until it goes to mid and it will be less than equal to mid because I am taking the value of mid.",
+      "timestamp_label": "21:35"
+    },
+    {
+      "id": 594,
+      "start": 1301.24,
+      "end": 1303.24,
+      "text": "Okay, less than equal to mid.",
+      "timestamp_label": "21:41"
+    },
+    {
+      "id": 595,
+      "start": 1303.24,
+      "end": 1311.24,
+      "text": "So I will take it as I is less than equal to mid and I will erase it here and write I is less than equal to mid.",
+      "timestamp_label": "21:43"
+    },
+    {
+      "id": 596,
+      "start": 1311.24,
+      "end": 1314.24,
+      "text": "Why am I writing I is less than equal to mid?",
+      "timestamp_label": "21:51"
+    },
+    {
+      "id": 597,
+      "start": 1314.24,
+      "end": 1316.24,
+      "text": "That is why I am writing.",
+      "timestamp_label": "21:54"
+    },
+    {
+      "id": 598,
+      "start": 1316.24,
+      "end": 1321.24,
+      "text": "Because if this array is over, then I will copy it as is in the lower array.",
+      "timestamp_label": "21:56"
+    },
+    {
+      "id": 599,
+      "start": 1321.24,
+      "end": 1324.24,
+      "text": "So I will keep copying until it goes to mid.",
+      "timestamp_label": "22:01"
+    },
+    {
+      "id": 600,
+      "start": 1324.24,
+      "end": 1330.24,
+      "text": "If you believe me, all these elements have come here, so I will copy 7 and 15 as is mid.",
+      "timestamp_label": "22:04"
+    },
+    {
+      "id": 601,
+      "start": 1330.24,
+      "end": 1334.24,
+      "text": "And if I want to run mid with 0, then I will write I is less than equal to mid.",
+      "timestamp_label": "22:10"
+    },
+    {
+      "id": 602,
+      "start": 1334.24,
+      "end": 1338.24,
+      "text": "Or wherever I have come from, then I will run mid with 0.",
+      "timestamp_label": "22:14"
+    },
+    {
+      "id": 603,
+      "start": 1338.24,
+      "end": 1342.24,
+      "text": "And here I will write J is less than equal to high.",
+      "timestamp_label": "22:18"
+    },
+    {
+      "id": 604,
+      "start": 1342.24,
+      "end": 1345.24,
+      "text": "So J is less than equal to, here I will write high.",
+      "timestamp_label": "22:22"
+    },
+    {
+      "id": 605,
+      "start": 1345.24,
+      "end": 1348.24,
+      "text": "So I will make it as is and write high here.",
+      "timestamp_label": "22:25"
+    },
+    {
+      "id": 606,
+      "start": 1348.24,
+      "end": 1353.24,
+      "text": "And here the CK is equal to AI, this time it will be, what is this?",
+      "timestamp_label": "22:28"
+    },
+    {
+      "id": 607,
+      "start": 1353.24,
+      "end": 1358.24,
+      "text": "I will copy it in B, so it will be BK first and BK is equal to AI.",
+      "timestamp_label": "22:33"
+    },
+    {
+      "id": 608,
+      "start": 1358.24,
+      "end": 1360.24,
+      "text": "Everything else will remain the same, so here it will be BK.",
+      "timestamp_label": "22:38"
+    },
+    {
+      "id": 609,
+      "start": 1360.24,
+      "end": 1368.24,
+      "text": "So I have changed the same procedure such that I am dividing one array in two parts,",
+      "timestamp_label": "22:40"
+    },
+    {
+      "id": 610,
+      "start": 1368.24,
+      "end": 1369.24,
+      "text": "in low, mid and high.",
+      "timestamp_label": "22:48"
+    },
+    {
+      "id": 611,
+      "start": 1369.24,
+      "end": 1372.24,
+      "text": "And I am merging it into a new array.",
+      "timestamp_label": "22:49"
+    },
+    {
+      "id": 612,
+      "start": 1372.24,
+      "end": 1374.24,
+      "text": "So this is our merge procedure.",
+      "timestamp_label": "22:52"
+    },
+    {
+      "id": 613,
+      "start": 1374.24,
+      "end": 1376.24,
+      "text": "So this is our merge procedure.",
+      "timestamp_label": "22:54"
+    },
+    {
+      "id": 614,
+      "start": 1376.24,
+      "end": 1378.24,
+      "text": "I hope you have understood the merge procedure.",
+      "timestamp_label": "22:56"
+    },
+    {
+      "id": 615,
+      "start": 1378.24,
+      "end": 1382.24,
+      "text": "And as soon as I do this work, I will do this work.",
+      "timestamp_label": "22:58"
+    },
+    {
+      "id": 616,
+      "start": 1382.24,
+      "end": 1387.24,
+      "text": "I want to copy these elements back into this.",
+      "timestamp_label": "23:02"
+    },
+    {
+      "id": 617,
+      "start": 1387.24,
+      "end": 1392.24,
+      "text": "I want to copy all the elements of BK back into A.",
+      "timestamp_label": "23:07"
+    },
+    {
+      "id": 618,
+      "start": 1392.24,
+      "end": 1393.24,
+      "text": "What will I do for that?",
+      "timestamp_label": "23:12"
+    },
+    {
+      "id": 619,
+      "start": 1393.24,
+      "end": 1396.24,
+      "text": "I will write a for loop for that, I will write a very simple for loop.",
+      "timestamp_label": "23:13"
+    },
+    {
+      "id": 620,
+      "start": 1396.24,
+      "end": 1399.24,
+      "text": "And I will write the for loop as I will write.",
+      "timestamp_label": "23:16"
+    },
+    {
+      "id": 621,
+      "start": 1399.24,
+      "end": 1402.24,
+      "text": "I will write the for loop here.",
+      "timestamp_label": "23:19"
+    },
+    {
+      "id": 622,
+      "start": 1402.24,
+      "end": 1405.24,
+      "text": "I will make some space here and I will write the for loop here.",
+      "timestamp_label": "23:22"
+    },
+    {
+      "id": 623,
+      "start": 1405.24,
+      "end": 1411.24,
+      "text": "So I will write for loop here.",
+      "timestamp_label": "23:25"
+    },
+    {
+      "id": 624,
+      "start": 1411.24,
+      "end": 1414.24,
+      "text": "I will write for.",
+      "timestamp_label": "23:31"
+    },
+    {
+      "id": 625,
+      "start": 1414.24,
+      "end": 1423.24,
+      "text": "I will start i is equal to L and I will go from i less than equal to h.",
+      "timestamp_label": "23:34"
+    },
+    {
+      "id": 626,
+      "start": 1423.24,
+      "end": 1426.24,
+      "text": "And I will write i plus plus.",
+      "timestamp_label": "23:43"
+    },
+    {
+      "id": 627,
+      "start": 1426.24,
+      "end": 1428.24,
+      "text": "And I will write this in one line due to lack of space.",
+      "timestamp_label": "23:46"
+    },
+    {
+      "id": 628,
+      "start": 1428.24,
+      "end": 1433.24,
+      "text": "I will write i is equal to bj.",
+      "timestamp_label": "23:48"
+    },
+    {
+      "id": 629,
+      "start": 1433.24,
+      "end": 1437.24,
+      "text": "And all these elements will copy BK elements into A.",
+      "timestamp_label": "23:53"
+    },
+    {
+      "id": 630,
+      "start": 1437.24,
+      "end": 1439.24,
+      "text": "That's all I will write here.",
+      "timestamp_label": "23:57"
+    },
+    {
+      "id": 631,
+      "start": 1439.24,
+      "end": 1440.24,
+      "text": "By the way, this is the same column.",
+      "timestamp_label": "23:59"
+    },
+    {
+      "id": 632,
+      "start": 1440.24,
+      "end": 1443.24,
+      "text": "And I hope you have understood.",
+      "timestamp_label": "24:00"
+    },
+    {
+      "id": 633,
+      "start": 1443.24,
+      "end": 1446.24,
+      "text": "I will give you an example of one of these.",
+      "timestamp_label": "24:03"
+    },
+    {
+      "id": 634,
+      "start": 1446.24,
+      "end": 1450.24,
+      "text": "You know I have 7, 8, 11.",
+      "timestamp_label": "24:06"
+    },
+    {
+      "id": 635,
+      "start": 1450.24,
+      "end": 1452.24,
+      "text": "And I have 1, 2, 3.",
+      "timestamp_label": "24:10"
+    },
+    {
+      "id": 636,
+      "start": 1452.24,
+      "end": 1454.24,
+      "text": "And these are the same elements.",
+      "timestamp_label": "24:12"
+    },
+    {
+      "id": 637,
+      "start": 1454.24,
+      "end": 1456.24,
+      "text": "And here I will write partition n.",
+      "timestamp_label": "24:14"
+    },
+    {
+      "id": 638,
+      "start": 1456.24,
+      "end": 1463.24,
+      "text": "So what I will do is, I will merge this and this and copy it in the same area.",
+      "timestamp_label": "24:16"
+    },
+    {
+      "id": 639,
+      "start": 1463.24,
+      "end": 1465.24,
+      "text": "So first I will make a new array.",
+      "timestamp_label": "24:23"
+    },
+    {
+      "id": 640,
+      "start": 1465.24,
+      "end": 1467.24,
+      "text": "I will copy 7 and 1 and 1 will come.",
+      "timestamp_label": "24:25"
+    },
+    {
+      "id": 641,
+      "start": 1467.24,
+      "end": 1469.24,
+      "text": "1 is considered.",
+      "timestamp_label": "24:27"
+    },
+    {
+      "id": 642,
+      "start": 1469.24,
+      "end": 1471.24,
+      "text": "Now I will copy 7 and 2.",
+      "timestamp_label": "24:29"
+    },
+    {
+      "id": 643,
+      "start": 1471.24,
+      "end": 1473.24,
+      "text": "Then I will copy 3 and 7.",
+      "timestamp_label": "24:31"
+    },
+    {
+      "id": 644,
+      "start": 1473.24,
+      "end": 1475.24,
+      "text": "Now I will copy 7, 8 and 11.",
+      "timestamp_label": "24:33"
+    },
+    {
+      "id": 645,
+      "start": 1475.24,
+      "end": 1477.24,
+      "text": "One loop will go from this loop.",
+      "timestamp_label": "24:35"
+    },
+    {
+      "id": 646,
+      "start": 1477.24,
+      "end": 1480.24,
+      "text": "In fact, first one will go and 7, 8 and 11 will be copied.",
+      "timestamp_label": "24:37"
+    },
+    {
+      "id": 647,
+      "start": 1480.24,
+      "end": 1484.24,
+      "text": "Then where will this whole thing be copied?",
+      "timestamp_label": "24:40"
+    },
+    {
+      "id": 648,
+      "start": 1484.24,
+      "end": 1486.24,
+      "text": "This whole thing will be copied by itself.",
+      "timestamp_label": "24:44"
+    },
+    {
+      "id": 649,
+      "start": 1486.24,
+      "end": 1489.24,
+      "text": "So I got merged array which is sorted.",
+      "timestamp_label": "24:46"
+    },
+    {
+      "id": 650,
+      "start": 1489.24,
+      "end": 1491.24,
+      "text": "So this is merged sorted array.",
+      "timestamp_label": "24:49"
+    },
+    {
+      "id": 651,
+      "start": 1491.24,
+      "end": 1498.24,
+      "text": "Merged sorted array.",
+      "timestamp_label": "24:51"
+    },
+    {
+      "id": 652,
+      "start": 1498.24,
+      "end": 1501.24,
+      "text": "So I got merged sorted array.",
+      "timestamp_label": "24:58"
+    },
+    {
+      "id": 653,
+      "start": 1501.24,
+      "end": 1503.24,
+      "text": "So I have merged it.",
+      "timestamp_label": "25:01"
+    },
+    {
+      "id": 654,
+      "start": 1503.24,
+      "end": 1508.24,
+      "text": "And along with that, I have made a merged sorted array.",
+      "timestamp_label": "25:03"
+    },
+    {
+      "id": 655,
+      "start": 1508.24,
+      "end": 1510.24,
+      "text": "So it was very easy.",
+      "timestamp_label": "25:08"
+    },
+    {
+      "id": 656,
+      "start": 1510.24,
+      "end": 1512.24,
+      "text": "We had one array.",
+      "timestamp_label": "25:10"
+    },
+    {
+      "id": 657,
+      "start": 1512.24,
+      "end": 1514.24,
+      "text": "We have given low, mid and high.",
+      "timestamp_label": "25:12"
+    },
+    {
+      "id": 658,
+      "start": 1514.24,
+      "end": 1516.24,
+      "text": "What we have to do with the same array?",
+      "timestamp_label": "25:14"
+    },
+    {
+      "id": 659,
+      "start": 1516.24,
+      "end": 1523.24,
+      "text": "We have to merge the same array where our low, mid and high are.",
+      "timestamp_label": "25:16"
+    },
+    {
+      "id": 660,
+      "start": 1523.24,
+      "end": 1526.24,
+      "text": "Given that the new array is sorted.",
+      "timestamp_label": "25:23"
+    },
+    {
+      "id": 661,
+      "start": 1526.24,
+      "end": 1532.24,
+      "text": "Given that the elements are sorted in the array from low to mid and from mid plus 1 to high.",
+      "timestamp_label": "25:26"
+    },
+    {
+      "id": 662,
+      "start": 1532.24,
+      "end": 1534.24,
+      "text": "This is the condition.",
+      "timestamp_label": "25:32"
+    },
+    {
+      "id": 663,
+      "start": 1534.24,
+      "end": 1538.24,
+      "text": "You can do this until the condition meets.",
+      "timestamp_label": "25:34"
+    },
+    {
+      "id": 664,
+      "start": 1538.24,
+      "end": 1540.24,
+      "text": "So I hope you have understood this.",
+      "timestamp_label": "25:38"
+    },
+    {
+      "id": 665,
+      "start": 1540.24,
+      "end": 1543.24,
+      "text": "But you must be thinking what is the merge sort algorithm?",
+      "timestamp_label": "25:40"
+    },
+    {
+      "id": 666,
+      "start": 1543.24,
+      "end": 1545.24,
+      "text": "I did not understand the merge sort algorithm.",
+      "timestamp_label": "25:43"
+    },
+    {
+      "id": 667,
+      "start": 1545.24,
+      "end": 1547.24,
+      "text": "So let me tell you the merge sort algorithm.",
+      "timestamp_label": "25:45"
+    },
+    {
+      "id": 668,
+      "start": 1547.24,
+      "end": 1549.24,
+      "text": "Merge sort is a very simple algorithm.",
+      "timestamp_label": "25:47"
+    },
+    {
+      "id": 669,
+      "start": 1549.24,
+      "end": 1551.24,
+      "text": "We have to use merging in this.",
+      "timestamp_label": "25:49"
+    },
+    {
+      "id": 670,
+      "start": 1551.24,
+      "end": 1553.24,
+      "text": "Once you have an array,",
+      "timestamp_label": "25:51"
+    },
+    {
+      "id": 671,
+      "start": 1553.24,
+      "end": 1555.24,
+      "text": "Suppose you have an array like this.",
+      "timestamp_label": "25:53"
+    },
+    {
+      "id": 672,
+      "start": 1555.24,
+      "end": 1557.24,
+      "text": "7, 11, 20 and 21.",
+      "timestamp_label": "25:55"
+    },
+    {
+      "id": 673,
+      "start": 1557.24,
+      "end": 1559.24,
+      "text": "So you will say, sort these two.",
+      "timestamp_label": "25:57"
+    },
+    {
+      "id": 674,
+      "start": 1559.24,
+      "end": 1561.24,
+      "text": "So you will break it into two.",
+      "timestamp_label": "25:59"
+    },
+    {
+      "id": 675,
+      "start": 1561.24,
+      "end": 1564.24,
+      "text": "7, 11 and 20.",
+      "timestamp_label": "26:01"
+    },
+    {
+      "id": 676,
+      "start": 1564.24,
+      "end": 1566.24,
+      "text": "Then you will break it into two.",
+      "timestamp_label": "26:04"
+    },
+    {
+      "id": 677,
+      "start": 1566.24,
+      "end": 1568.24,
+      "text": "This will break into 7 and 11.",
+      "timestamp_label": "26:06"
+    },
+    {
+      "id": 678,
+      "start": 1568.24,
+      "end": 1570.24,
+      "text": "You will merge 7 and 11 again.",
+      "timestamp_label": "26:08"
+    },
+    {
+      "id": 679,
+      "start": 1570.24,
+      "end": 1572.24,
+      "text": "So this is 7 and 11 is sorted already.",
+      "timestamp_label": "26:10"
+    },
+    {
+      "id": 680,
+      "start": 1572.24,
+      "end": 1574.24,
+      "text": "So this is already sorted.",
+      "timestamp_label": "26:12"
+    },
+    {
+      "id": 681,
+      "start": 1574.24,
+      "end": 1577.24,
+      "text": "So how will 7 and 11 be like this?",
+      "timestamp_label": "26:14"
+    },
+    {
+      "id": 682,
+      "start": 1577.24,
+      "end": 1579.24,
+      "text": "Then there are 20 and 20 sorted.",
+      "timestamp_label": "26:17"
+    },
+    {
+      "id": 683,
+      "start": 1579.24,
+      "end": 1580.24,
+      "text": "So 20 and 20 will be like this.",
+      "timestamp_label": "26:19"
+    },
+    {
+      "id": 684,
+      "start": 1580.24,
+      "end": 1582.24,
+      "text": "In fact, I have taken an example of sorted array.",
+      "timestamp_label": "26:20"
+    },
+    {
+      "id": 685,
+      "start": 1582.24,
+      "end": 1585.24,
+      "text": "If I keep an example of a sorted array in front of you.",
+      "timestamp_label": "26:22"
+    },
+    {
+      "id": 686,
+      "start": 1585.24,
+      "end": 1587.24,
+      "text": "Then it will be like this.",
+      "timestamp_label": "26:25"
+    },
+    {
+      "id": 687,
+      "start": 1587.24,
+      "end": 1589.24,
+      "text": "1, 7, 6, 5.",
+      "timestamp_label": "26:27"
+    },
+    {
+      "id": 688,
+      "start": 1589.24,
+      "end": 1591.24,
+      "text": "So what will happen?",
+      "timestamp_label": "26:29"
+    },
+    {
+      "id": 689,
+      "start": 1591.24,
+      "end": 1593.24,
+      "text": "In fact, I will do 11, 7, 6, 5.",
+      "timestamp_label": "26:31"
+    },
+    {
+      "id": 690,
+      "start": 1593.24,
+      "end": 1594.24,
+      "text": "This will break into two.",
+      "timestamp_label": "26:33"
+    },
+    {
+      "id": 691,
+      "start": 1594.24,
+      "end": 1596.24,
+      "text": "11, 7 and 6, 5.",
+      "timestamp_label": "26:34"
+    },
+    {
+      "id": 692,
+      "start": 1596.24,
+      "end": 1598.24,
+      "text": "Then 11, 7 will break into two.",
+      "timestamp_label": "26:36"
+    },
+    {
+      "id": 693,
+      "start": 1598.24,
+      "end": 1600.24,
+      "text": "11 and 7.",
+      "timestamp_label": "26:38"
+    },
+    {
+      "id": 694,
+      "start": 1600.24,
+      "end": 1603.24,
+      "text": "So when 11 and 7 will merge,",
+      "timestamp_label": "26:40"
+    },
+    {
+      "id": 695,
+      "start": 1603.24,
+      "end": 1605.24,
+      "text": "then 7 and 11 will be like this.",
+      "timestamp_label": "26:43"
+    },
+    {
+      "id": 696,
+      "start": 1605.24,
+      "end": 1607.24,
+      "text": "And when 6 and 5 will merge,",
+      "timestamp_label": "26:45"
+    },
+    {
+      "id": 697,
+      "start": 1607.24,
+      "end": 1609.24,
+      "text": "then 5 and 6 will be like this.",
+      "timestamp_label": "26:47"
+    },
+    {
+      "id": 698,
+      "start": 1609.24,
+      "end": 1612.24,
+      "text": "Then when 5, 6 and 7 and 11 will merge,",
+      "timestamp_label": "26:49"
+    },
+    {
+      "id": 699,
+      "start": 1612.24,
+      "end": 1614.24,
+      "text": "then 5, 6, 7 and 11 will be like this.",
+      "timestamp_label": "26:52"
+    },
+    {
+      "id": 700,
+      "start": 1614.24,
+      "end": 1616.24,
+      "text": "So this will be sorted.",
+      "timestamp_label": "26:54"
+    },
+    {
+      "id": 701,
+      "start": 1616.24,
+      "end": 1618.24,
+      "text": "So I will delete this.",
+      "timestamp_label": "26:56"
+    },
+    {
+      "id": 702,
+      "start": 1618.24,
+      "end": 1620.24,
+      "text": "I will give you a lack of space.",
+      "timestamp_label": "26:58"
+    },
+    {
+      "id": 703,
+      "start": 1620.24,
+      "end": 1622.24,
+      "text": "And after deleting this,",
+      "timestamp_label": "27:00"
+    },
+    {
+      "id": 704,
+      "start": 1622.24,
+      "end": 1624.24,
+      "text": "what will I do here?",
+      "timestamp_label": "27:02"
+    },
+    {
+      "id": 705,
+      "start": 1624.24,
+      "end": 1628.24,
+      "text": "I will show you how it will be a procedure.",
+      "timestamp_label": "27:04"
+    },
+    {
+      "id": 706,
+      "start": 1628.24,
+      "end": 1629.24,
+      "text": "Merge sort.",
+      "timestamp_label": "27:08"
+    },
+    {
+      "id": 707,
+      "start": 1629.24,
+      "end": 1631.24,
+      "text": "So you understood the procedure of merging.",
+      "timestamp_label": "27:09"
+    },
+    {
+      "id": 708,
+      "start": 1631.24,
+      "end": 1633.24,
+      "text": "We will have an array, we will have a mid,",
+      "timestamp_label": "27:11"
+    },
+    {
+      "id": 709,
+      "start": 1633.24,
+      "end": 1635.24,
+      "text": "low, high.",
+      "timestamp_label": "27:13"
+    },
+    {
+      "id": 710,
+      "start": 1635.24,
+      "end": 1637.24,
+      "text": "Now you are thinking that we have not made B here.",
+      "timestamp_label": "27:15"
+    },
+    {
+      "id": 711,
+      "start": 1637.24,
+      "end": 1639.24,
+      "text": "So we will have to make B here.",
+      "timestamp_label": "27:17"
+    },
+    {
+      "id": 712,
+      "start": 1639.24,
+      "end": 1641.24,
+      "text": "We will have to make B here.",
+      "timestamp_label": "27:19"
+    },
+    {
+      "id": 713,
+      "start": 1641.24,
+      "end": 1644.24,
+      "text": "And what will be the size of B?",
+      "timestamp_label": "27:21"
+    },
+    {
+      "id": 714,
+      "start": 1644.24,
+      "end": 1647.24,
+      "text": "It will be the size of high plus 1.",
+      "timestamp_label": "27:24"
+    },
+    {
+      "id": 715,
+      "start": 1647.24,
+      "end": 1650.24,
+      "text": "So the size of B will be equal to high plus 1.",
+      "timestamp_label": "27:27"
+    },
+    {
+      "id": 716,
+      "start": 1650.24,
+      "end": 1652.24,
+      "text": "So I will write here,",
+      "timestamp_label": "27:30"
+    },
+    {
+      "id": 717,
+      "start": 1652.24,
+      "end": 1656.24,
+      "text": "int B high plus 1.",
+      "timestamp_label": "27:32"
+    },
+    {
+      "id": 718,
+      "start": 1656.24,
+      "end": 1659.24,
+      "text": "So I have written B here equal to high plus 1.",
+      "timestamp_label": "27:36"
+    },
+    {
+      "id": 719,
+      "start": 1659.24,
+      "end": 1662.24,
+      "text": "So this is our whole merging procedure.",
+      "timestamp_label": "27:39"
+    },
+    {
+      "id": 720,
+      "start": 1662.24,
+      "end": 1666.24,
+      "text": "Now let's see how to work with merge sort.",
+      "timestamp_label": "27:42"
+    },
+    {
+      "id": 721,
+      "start": 1666.24,
+      "end": 1668.24,
+      "text": "So here what I am going to tell you about algorithm is",
+      "timestamp_label": "27:46"
+    },
+    {
+      "id": 722,
+      "start": 1668.24,
+      "end": 1670.24,
+      "text": "rigorous merge sort.",
+      "timestamp_label": "27:48"
+    },
+    {
+      "id": 723,
+      "start": 1670.24,
+      "end": 1672.24,
+      "text": "So I will clear a little space here.",
+      "timestamp_label": "27:50"
+    },
+    {
+      "id": 724,
+      "start": 1672.24,
+      "end": 1674.24,
+      "text": "And after clearing a little space,",
+      "timestamp_label": "27:52"
+    },
+    {
+      "id": 725,
+      "start": 1674.24,
+      "end": 1677.24,
+      "text": "I will tell you how this works.",
+      "timestamp_label": "27:54"
+    },
+    {
+      "id": 726,
+      "start": 1677.24,
+      "end": 1679.24,
+      "text": "Recursive merge sort.",
+      "timestamp_label": "27:57"
+    },
+    {
+      "id": 727,
+      "start": 1679.24,
+      "end": 1681.24,
+      "text": "So we will see recursive merge sort here.",
+      "timestamp_label": "27:59"
+    },
+    {
+      "id": 728,
+      "start": 1681.24,
+      "end": 1684.24,
+      "text": "And we will see how it works.",
+      "timestamp_label": "28:01"
+    },
+    {
+      "id": 729,
+      "start": 1684.24,
+      "end": 1686.24,
+      "text": "So I will put a heading here first.",
+      "timestamp_label": "28:04"
+    },
+    {
+      "id": 730,
+      "start": 1686.24,
+      "end": 1688.24,
+      "text": "Recursive merge sort.",
+      "timestamp_label": "28:06"
+    },
+    {
+      "id": 731,
+      "start": 1688.24,
+      "end": 1690.24,
+      "text": "Recursive merge sort.",
+      "timestamp_label": "28:08"
+    },
+    {
+      "id": 732,
+      "start": 1690.24,
+      "end": 1692.24,
+      "text": "Recursive merge sort will do something like this.",
+      "timestamp_label": "28:10"
+    },
+    {
+      "id": 733,
+      "start": 1692.24,
+      "end": 1696.24,
+      "text": "That is, I will write void ms.",
+      "timestamp_label": "28:12"
+    },
+    {
+      "id": 734,
+      "start": 1696.24,
+      "end": 1698.24,
+      "text": "This is ms.",
+      "timestamp_label": "28:16"
+    },
+    {
+      "id": 735,
+      "start": 1698.24,
+      "end": 1700.24,
+      "text": "This is ms.",
+      "timestamp_label": "28:18"
+    },
+    {
+      "id": 736,
+      "start": 1700.24,
+      "end": 1702.24,
+      "text": "This is ms.",
+      "timestamp_label": "28:20"
+    },
+    {
+      "id": 737,
+      "start": 1702.24,
+      "end": 1704.24,
+      "text": "This is merge sort ms.",
+      "timestamp_label": "28:22"
+    },
+    {
+      "id": 738,
+      "start": 1704.24,
+      "end": 1706.24,
+      "text": "Int a.",
+      "timestamp_label": "28:24"
+    },
+    {
+      "id": 739,
+      "start": 1706.24,
+      "end": 1708.24,
+      "text": "And after this, we will write",
+      "timestamp_label": "28:26"
+    },
+    {
+      "id": 740,
+      "start": 1708.24,
+      "end": 1712.24,
+      "text": "int low and int high.",
+      "timestamp_label": "28:28"
+    },
+    {
+      "id": 741,
+      "start": 1712.24,
+      "end": 1714.24,
+      "text": "So this will take a lower high.",
+      "timestamp_label": "28:32"
+    },
+    {
+      "id": 742,
+      "start": 1714.24,
+      "end": 1716.24,
+      "text": "From where to where do you want to sort?",
+      "timestamp_label": "28:34"
+    },
+    {
+      "id": 743,
+      "start": 1716.24,
+      "end": 1719.24,
+      "text": "If low is less than high,",
+      "timestamp_label": "28:36"
+    },
+    {
+      "id": 744,
+      "start": 1719.24,
+      "end": 1721.24,
+      "text": "then what will we do?",
+      "timestamp_label": "28:39"
+    },
+    {
+      "id": 745,
+      "start": 1721.24,
+      "end": 1723.24,
+      "text": "Then we will enter here.",
+      "timestamp_label": "28:41"
+    },
+    {
+      "id": 746,
+      "start": 1723.24,
+      "end": 1725.24,
+      "text": "And we will write here,",
+      "timestamp_label": "28:43"
+    },
+    {
+      "id": 747,
+      "start": 1725.24,
+      "end": 1727.24,
+      "text": "mid is equal to",
+      "timestamp_label": "28:45"
+    },
+    {
+      "id": 748,
+      "start": 1727.24,
+      "end": 1730.24,
+      "text": "low plus high divided by 2.",
+      "timestamp_label": "28:47"
+    },
+    {
+      "id": 749,
+      "start": 1730.24,
+      "end": 1732.24,
+      "text": "We will put brackets here.",
+      "timestamp_label": "28:50"
+    },
+    {
+      "id": 750,
+      "start": 1732.24,
+      "end": 1734.24,
+      "text": "And what will we do?",
+      "timestamp_label": "28:52"
+    },
+    {
+      "id": 751,
+      "start": 1734.24,
+      "end": 1736.24,
+      "text": "We will run this merge sort again.",
+      "timestamp_label": "28:54"
+    },
+    {
+      "id": 752,
+      "start": 1736.24,
+      "end": 1741.24,
+      "text": "And we will do a low and mid.",
+      "timestamp_label": "28:56"
+    },
+    {
+      "id": 753,
+      "start": 1741.24,
+      "end": 1744.24,
+      "text": "And after that, what will we do here?",
+      "timestamp_label": "29:01"
+    },
+    {
+      "id": 754,
+      "start": 1744.24,
+      "end": 1746.24,
+      "text": "We will run the same thing.",
+      "timestamp_label": "29:04"
+    },
+    {
+      "id": 755,
+      "start": 1746.24,
+      "end": 1748.24,
+      "text": "We will run merge sort.",
+      "timestamp_label": "29:06"
+    },
+    {
+      "id": 756,
+      "start": 1748.24,
+      "end": 1750.24,
+      "text": "a mid plus 1 and high.",
+      "timestamp_label": "29:08"
+    },
+    {
+      "id": 757,
+      "start": 1750.24,
+      "end": 1753.24,
+      "text": "Mid plus 1 and high.",
+      "timestamp_label": "29:10"
+    },
+    {
+      "id": 758,
+      "start": 1753.24,
+      "end": 1755.24,
+      "text": "And after that, what will we do?",
+      "timestamp_label": "29:13"
+    },
+    {
+      "id": 759,
+      "start": 1755.24,
+      "end": 1758.24,
+      "text": "We will write that the merge procedure",
+      "timestamp_label": "29:15"
+    },
+    {
+      "id": 760,
+      "start": 1758.24,
+      "end": 1760.24,
+      "text": "that we have written is",
+      "timestamp_label": "29:18"
+    },
+    {
+      "id": 761,
+      "start": 1760.24,
+      "end": 1764.24,
+      "text": "low, mid and high.",
+      "timestamp_label": "29:20"
+    },
+    {
+      "id": 762,
+      "start": 1764.24,
+      "end": 1766.24,
+      "text": "Do you understand what we have done here?",
+      "timestamp_label": "29:24"
+    },
+    {
+      "id": 763,
+      "start": 1766.24,
+      "end": 1768.24,
+      "text": "If you don't understand, I will tell you again.",
+      "timestamp_label": "29:26"
+    },
+    {
+      "id": 764,
+      "start": 1768.24,
+      "end": 1770.24,
+      "text": "What have we done here?",
+      "timestamp_label": "29:28"
+    },
+    {
+      "id": 765,
+      "start": 1770.24,
+      "end": 1772.24,
+      "text": "We said that if you have this array,",
+      "timestamp_label": "29:30"
+    },
+    {
+      "id": 766,
+      "start": 1772.24,
+      "end": 1774.24,
+      "text": "then this is an array.",
+      "timestamp_label": "29:32"
+    },
+    {
+      "id": 767,
+      "start": 1774.24,
+      "end": 1776.24,
+      "text": "I will take a new array.",
+      "timestamp_label": "29:34"
+    },
+    {
+      "id": 768,
+      "start": 1776.24,
+      "end": 1778.24,
+      "text": "There will be no sorted in this.",
+      "timestamp_label": "29:36"
+    },
+    {
+      "id": 769,
+      "start": 1778.24,
+      "end": 1780.24,
+      "text": "What will I do? I will break it.",
+      "timestamp_label": "29:38"
+    },
+    {
+      "id": 770,
+      "start": 1780.24,
+      "end": 1782.24,
+      "text": "I will take this low and take this high.",
+      "timestamp_label": "29:40"
+    },
+    {
+      "id": 771,
+      "start": 1782.24,
+      "end": 1784.24,
+      "text": "In fact, I have to write this as L.",
+      "timestamp_label": "29:42"
+    },
+    {
+      "id": 772,
+      "start": 1784.24,
+      "end": 1786.24,
+      "text": "I will take this high and take this low and high.",
+      "timestamp_label": "29:44"
+    },
+    {
+      "id": 773,
+      "start": 1786.24,
+      "end": 1788.24,
+      "text": "And after that, what will I do?",
+      "timestamp_label": "29:46"
+    },
+    {
+      "id": 774,
+      "start": 1788.24,
+      "end": 1790.24,
+      "text": "The mid of this will be low plus high by 2.",
+      "timestamp_label": "29:48"
+    },
+    {
+      "id": 775,
+      "start": 1790.24,
+      "end": 1792.24,
+      "text": "What will be my low? 0, 1, 2, 3.",
+      "timestamp_label": "29:50"
+    },
+    {
+      "id": 776,
+      "start": 1792.24,
+      "end": 1794.24,
+      "text": "What is 0 plus 3 by 2?",
+      "timestamp_label": "29:52"
+    },
+    {
+      "id": 777,
+      "start": 1794.24,
+      "end": 1796.24,
+      "text": "If you speak in C language,",
+      "timestamp_label": "29:54"
+    },
+    {
+      "id": 778,
+      "start": 1796.24,
+      "end": 1798.24,
+      "text": "then it will be 1.5, not 1.",
+      "timestamp_label": "29:56"
+    },
+    {
+      "id": 779,
+      "start": 1798.24,
+      "end": 1800.24,
+      "text": "So my mid will come here.",
+      "timestamp_label": "29:58"
+    },
+    {
+      "id": 780,
+      "start": 1800.24,
+      "end": 1802.24,
+      "text": "So it will break like this.",
+      "timestamp_label": "30:00"
+    },
+    {
+      "id": 781,
+      "start": 1802.24,
+      "end": 1804.24,
+      "text": "And mid will come here.",
+      "timestamp_label": "30:02"
+    },
+    {
+      "id": 782,
+      "start": 1804.24,
+      "end": 1806.24,
+      "text": "I will write mid here.",
+      "timestamp_label": "30:04"
+    },
+    {
+      "id": 783,
+      "start": 1806.24,
+      "end": 1808.24,
+      "text": "And once my mid comes here,",
+      "timestamp_label": "30:06"
+    },
+    {
+      "id": 784,
+      "start": 1808.24,
+      "end": 1810.24,
+      "text": "then what will I do?",
+      "timestamp_label": "30:08"
+    },
+    {
+      "id": 785,
+      "start": 1810.24,
+      "end": 1812.24,
+      "text": "Mid is equal to low plus high by 2.",
+      "timestamp_label": "30:10"
+    },
+    {
+      "id": 786,
+      "start": 1812.24,
+      "end": 1814.24,
+      "text": "And mid is equal to low plus high by 2.",
+      "timestamp_label": "30:12"
+    },
+    {
+      "id": 787,
+      "start": 1814.24,
+      "end": 1816.24,
+      "text": "If my mid comes here,",
+      "timestamp_label": "30:14"
+    },
+    {
+      "id": 788,
+      "start": 1816.24,
+      "end": 1818.24,
+      "text": "then I will run merge sort for a lower mid.",
+      "timestamp_label": "30:16"
+    },
+    {
+      "id": 789,
+      "start": 1818.24,
+      "end": 1820.24,
+      "text": "I will say do the same thing for this too.",
+      "timestamp_label": "30:18"
+    },
+    {
+      "id": 790,
+      "start": 1820.24,
+      "end": 1822.24,
+      "text": "Do the same thing for this too.",
+      "timestamp_label": "30:20"
+    },
+    {
+      "id": 791,
+      "start": 1822.24,
+      "end": 1824.24,
+      "text": "I mean, go and merge sort this too.",
+      "timestamp_label": "30:22"
+    },
+    {
+      "id": 792,
+      "start": 1824.24,
+      "end": 1826.24,
+      "text": "merge sort this too.",
+      "timestamp_label": "30:24"
+    },
+    {
+      "id": 793,
+      "start": 1826.24,
+      "end": 1828.24,
+      "text": "So what will happen if you do merge sort in 7 and 1?",
+      "timestamp_label": "30:26"
+    },
+    {
+      "id": 794,
+      "start": 1828.24,
+      "end": 1830.24,
+      "text": "What will be the value of mid?",
+      "timestamp_label": "30:28"
+    },
+    {
+      "id": 795,
+      "start": 1830.24,
+      "end": 1832.24,
+      "text": "The value of mid will be",
+      "timestamp_label": "30:30"
+    },
+    {
+      "id": 796,
+      "start": 1832.24,
+      "end": 1834.24,
+      "text": "low plus high by 2, 0 plus 1 by 2.",
+      "timestamp_label": "30:32"
+    },
+    {
+      "id": 797,
+      "start": 1834.24,
+      "end": 1836.24,
+      "text": "That is, mid will also be 0.",
+      "timestamp_label": "30:34"
+    },
+    {
+      "id": 798,
+      "start": 1836.24,
+      "end": 1838.24,
+      "text": "And this time, when you run for lower mid,",
+      "timestamp_label": "30:36"
+    },
+    {
+      "id": 799,
+      "start": 1838.24,
+      "end": 1840.24,
+      "text": "then it will be 0, 0.",
+      "timestamp_label": "30:38"
+    },
+    {
+      "id": 800,
+      "start": 1840.24,
+      "end": 1842.24,
+      "text": "That is, merge sort a, 0, 0 will be run.",
+      "timestamp_label": "30:40"
+    },
+    {
+      "id": 801,
+      "start": 1842.24,
+      "end": 1844.24,
+      "text": "So what will happen here?",
+      "timestamp_label": "30:42"
+    },
+    {
+      "id": 802,
+      "start": 1844.24,
+      "end": 1846.24,
+      "text": "When you run merge sort for 7 and 1,",
+      "timestamp_label": "30:44"
+    },
+    {
+      "id": 803,
+      "start": 1846.24,
+      "end": 1848.24,
+      "text": "then what will happen?",
+      "timestamp_label": "30:46"
+    },
+    {
+      "id": 804,
+      "start": 1848.24,
+      "end": 1850.24,
+      "text": "So 7 and 1 will be 7 and 1.",
+      "timestamp_label": "30:48"
+    },
+    {
+      "id": 805,
+      "start": 1850.24,
+      "end": 1852.24,
+      "text": "So 7 and 1, 7 and 1 will come like this.",
+      "timestamp_label": "30:50"
+    },
+    {
+      "id": 806,
+      "start": 1852.24,
+      "end": 1854.24,
+      "text": "And when you run merge sort,",
+      "timestamp_label": "30:52"
+    },
+    {
+      "id": 807,
+      "start": 1854.24,
+      "end": 1856.24,
+      "text": "then merge sort,",
+      "timestamp_label": "30:54"
+    },
+    {
+      "id": 808,
+      "start": 1856.24,
+      "end": 1858.24,
+      "text": "then merge sort,",
+      "timestamp_label": "30:56"
+    },
+    {
+      "id": 809,
+      "start": 1858.24,
+      "end": 1860.24,
+      "text": "then merge sort,",
+      "timestamp_label": "30:58"
+    },
+    {
+      "id": 810,
+      "start": 1860.24,
+      "end": 1862.24,
+      "text": "and merge sort.",
+      "timestamp_label": "31:00"
+    },
+    {
+      "id": 811,
+      "start": 1862.24,
+      "end": 1864.24,
+      "text": "Similarly, here also,",
+      "timestamp_label": "31:02"
+    },
+    {
+      "id": 812,
+      "start": 1864.24,
+      "end": 1866.24,
+      "text": "merge sort will come.",
+      "timestamp_label": "31:04"
+    },
+    {
+      "id": 813,
+      "start": 1866.24,
+      "end": 1868.24,
+      "text": "And merge sort will come.",
+      "timestamp_label": "31:06"
+    },
+    {
+      "id": 814,
+      "start": 1868.24,
+      "end": 1870.24,
+      "text": "So merge sort will come.",
+      "timestamp_label": "31:08"
+    },
+    {
+      "id": 815,
+      "start": 1870.24,
+      "end": 1872.24,
+      "text": "So basically, what we are doing here,",
+      "timestamp_label": "31:10"
+    },
+    {
+      "id": 816,
+      "start": 1872.24,
+      "end": 1874.24,
+      "text": "we are writing here first,",
+      "timestamp_label": "31:12"
+    },
+    {
+      "id": 817,
+      "start": 1874.24,
+      "end": 1876.24,
+      "text": "a condition that if low is less than high,",
+      "timestamp_label": "31:14"
+    },
+    {
+      "id": 818,
+      "start": 1876.24,
+      "end": 1878.24,
+      "text": "that is, you run it till then,",
+      "timestamp_label": "31:16"
+    },
+    {
+      "id": 819,
+      "start": 1878.24,
+      "end": 1880.24,
+      "text": "if low is less than high,",
+      "timestamp_label": "31:18"
+    },
+    {
+      "id": 820,
+      "start": 1880.24,
+      "end": 1882.24,
+      "text": "then it will return like this.",
+      "timestamp_label": "31:20"
+    },
+    {
+      "id": 821,
+      "start": 1882.24,
+      "end": 1884.24,
+      "text": "If low is less than high, that is, if you run for 0, 0,",
+      "timestamp_label": "31:22"
+    },
+    {
+      "id": 822,
+      "start": 1884.24,
+      "end": 1886.24,
+      "text": "then it will not do anything.",
+      "timestamp_label": "31:24"
+    },
+    {
+      "id": 823,
+      "start": 1886.24,
+      "end": 1888.24,
+      "text": "Because 7 is sorted by itself.",
+      "timestamp_label": "31:26"
+    },
+    {
+      "id": 824,
+      "start": 1888.24,
+      "end": 1890.24,
+      "text": "Even 1 is sorted by itself.",
+      "timestamp_label": "31:28"
+    },
+    {
+      "id": 825,
+      "start": 1890.24,
+      "end": 1892.24,
+      "text": "So low and high should be",
+      "timestamp_label": "31:30"
+    },
+    {
+      "id": 826,
+      "start": 1892.24,
+      "end": 1894.24,
+      "text": "such that low is less than high.",
+      "timestamp_label": "31:32"
+    },
+    {
+      "id": 827,
+      "start": 1894.24,
+      "end": 1896.24,
+      "text": "It will not go right.",
+      "timestamp_label": "31:34"
+    },
+    {
+      "id": 828,
+      "start": 1896.24,
+      "end": 1898.24,
+      "text": "Low should be less than high.",
+      "timestamp_label": "31:36"
+    },
+    {
+      "id": 829,
+      "start": 1898.24,
+      "end": 1900.24,
+      "text": "So we will do sorting, otherwise we will not do anything.",
+      "timestamp_label": "31:38"
+    },
+    {
+      "id": 830,
+      "start": 1900.24,
+      "end": 1902.24,
+      "text": "And once 7 and 1",
+      "timestamp_label": "31:40"
+    },
+    {
+      "id": 831,
+      "start": 1902.24,
+      "end": 1904.24,
+      "text": "are broken, that is, 7 and 1 are different,",
+      "timestamp_label": "31:42"
+    },
+    {
+      "id": 832,
+      "start": 1904.24,
+      "end": 1906.24,
+      "text": "then we will merge 7 and 1.",
+      "timestamp_label": "31:44"
+    },
+    {
+      "id": 833,
+      "start": 1906.24,
+      "end": 1908.24,
+      "text": "Here, look, we are merging at the end.",
+      "timestamp_label": "31:46"
+    },
+    {
+      "id": 834,
+      "start": 1908.24,
+      "end": 1910.24,
+      "text": "And what are we merging?",
+      "timestamp_label": "31:48"
+    },
+    {
+      "id": 835,
+      "start": 1910.24,
+      "end": 1912.24,
+      "text": "We are merging in the way that we do everything in A.",
+      "timestamp_label": "31:50"
+    },
+    {
+      "id": 836,
+      "start": 1912.24,
+      "end": 1914.24,
+      "text": "I have told you the merge procedure here.",
+      "timestamp_label": "31:52"
+    },
+    {
+      "id": 837,
+      "start": 1914.24,
+      "end": 1916.24,
+      "text": "So I have merged sort for A low and mid.",
+      "timestamp_label": "31:54"
+    },
+    {
+      "id": 838,
+      "start": 1916.24,
+      "end": 1918.24,
+      "text": "And A mid plus 1 for high.",
+      "timestamp_label": "31:56"
+    },
+    {
+      "id": 839,
+      "start": 1918.24,
+      "end": 1920.24,
+      "text": "That is, A for low and mid.",
+      "timestamp_label": "31:58"
+    },
+    {
+      "id": 840,
+      "start": 1920.24,
+      "end": 1922.24,
+      "text": "Or for these two,",
+      "timestamp_label": "32:00"
+    },
+    {
+      "id": 841,
+      "start": 1922.24,
+      "end": 1924.24,
+      "text": "for this part, or this part.",
+      "timestamp_label": "32:02"
+    },
+    {
+      "id": 842,
+      "start": 1924.24,
+      "end": 1926.24,
+      "text": "Then I will do the same for this part.",
+      "timestamp_label": "32:04"
+    },
+    {
+      "id": 843,
+      "start": 1926.24,
+      "end": 1928.24,
+      "text": "And I have told you to merge these two.",
+      "timestamp_label": "32:06"
+    },
+    {
+      "id": 844,
+      "start": 1928.24,
+      "end": 1930.24,
+      "text": "I have told you to merge here and here.",
+      "timestamp_label": "32:08"
+    },
+    {
+      "id": 845,
+      "start": 1930.24,
+      "end": 1932.24,
+      "text": "And merge whatever is coming down here.",
+      "timestamp_label": "32:10"
+    },
+    {
+      "id": 846,
+      "start": 1932.24,
+      "end": 1934.24,
+      "text": "So merge it again.",
+      "timestamp_label": "32:12"
+    },
+    {
+      "id": 847,
+      "start": 1934.24,
+      "end": 1936.24,
+      "text": "So merge it, merge it and merge it.",
+      "timestamp_label": "32:14"
+    },
+    {
+      "id": 848,
+      "start": 1936.24,
+      "end": 1938.24,
+      "text": "So what will happen here? merge it, merge it.",
+      "timestamp_label": "32:16"
+    },
+    {
+      "id": 849,
+      "start": 1938.24,
+      "end": 1940.24,
+      "text": "These two will merge.",
+      "timestamp_label": "32:18"
+    },
+    {
+      "id": 850,
+      "start": 1940.24,
+      "end": 1942.24,
+      "text": "But it will still merge.",
+      "timestamp_label": "32:20"
+    },
+    {
+      "id": 851,
+      "start": 1942.24,
+      "end": 1944.24,
+      "text": "It will not stop.",
+      "timestamp_label": "32:22"
+    },
+    {
+      "id": 852,
+      "start": 1944.24,
+      "end": 1946.24,
+      "text": "It will merge, merge it.",
+      "timestamp_label": "32:24"
+    },
+    {
+      "id": 853,
+      "start": 1946.24,
+      "end": 1948.24,
+      "text": "After this, it will merge.",
+      "timestamp_label": "32:26"
+    },
+    {
+      "id": 854,
+      "start": 1948.24,
+      "end": 1950.24,
+      "text": "So you must do this once dry run.",
+      "timestamp_label": "32:28"
+    },
+    {
+      "id": 855,
+      "start": 1950.24,
+      "end": 1952.24,
+      "text": "And when we write the code,",
+      "timestamp_label": "32:30"
+    },
+    {
+      "id": 856,
+      "start": 1952.24,
+      "end": 1954.24,
+      "text": "then we will see this once again",
+      "timestamp_label": "32:32"
+    },
+    {
+      "id": 857,
+      "start": 1954.24,
+      "end": 1956.24,
+      "text": "and we will see it once again.",
+      "timestamp_label": "32:34"
+    },
+    {
+      "id": 858,
+      "start": 1956.24,
+      "end": 1958.24,
+      "text": "We will see it dry run.",
+      "timestamp_label": "32:36"
+    },
+    {
+      "id": 859,
+      "start": 1958.24,
+      "end": 1960.24,
+      "text": "And we will understand it properly.",
+      "timestamp_label": "32:38"
+    },
+    {
+      "id": 860,
+      "start": 1960.24,
+      "end": 1962.24,
+      "text": "Now this merge procedure and recursive merge sort function",
+      "timestamp_label": "32:40"
+    },
+    {
+      "id": 861,
+      "start": 1962.24,
+      "end": 1964.24,
+      "text": "should be understood by you.",
+      "timestamp_label": "32:42"
+    },
+    {
+      "id": 862,
+      "start": 1964.24,
+      "end": 1966.24,
+      "text": "And if you understand this,",
+      "timestamp_label": "32:44"
+    },
+    {
+      "id": 863,
+      "start": 1966.24,
+      "end": 1968.24,
+      "text": "then according to me,",
+      "timestamp_label": "32:46"
+    },
+    {
+      "id": 864,
+      "start": 1968.24,
+      "end": 1970.24,
+      "text": "when you write the code, then you will get very clear things.",
+      "timestamp_label": "32:48"
+    },
+    {
+      "id": 865,
+      "start": 1970.24,
+      "end": 1972.24,
+      "text": "Okay.",
+      "timestamp_label": "32:50"
+    },
+    {
+      "id": 866,
+      "start": 1972.24,
+      "end": 1974.24,
+      "text": "If you have not cleared the merge sort,",
+      "timestamp_label": "32:52"
+    },
+    {
+      "id": 867,
+      "start": 1974.24,
+      "end": 1976.24,
+      "text": "then you wait for the code.",
+      "timestamp_label": "32:54"
+    },
+    {
+      "id": 868,
+      "start": 1976.24,
+      "end": 1978.24,
+      "text": "As soon as I upload the code,",
+      "timestamp_label": "32:56"
+    },
+    {
+      "id": 869,
+      "start": 1978.24,
+      "end": 1980.24,
+      "text": "I will clear the things crystal.",
+      "timestamp_label": "32:58"
+    },
+    {
+      "id": 870,
+      "start": 1980.24,
+      "end": 1982.24,
+      "text": "Crystal will be cleared.",
+      "timestamp_label": "33:00"
+    },
+    {
+      "id": 871,
+      "start": 1982.24,
+      "end": 1984.24,
+      "text": "But you must understand the merge.",
+      "timestamp_label": "33:02"
+    },
+    {
+      "id": 872,
+      "start": 1984.24,
+      "end": 1986.24,
+      "text": "There is nothing in the merge sort.",
+      "timestamp_label": "33:04"
+    },
+    {
+      "id": 873,
+      "start": 1986.24,
+      "end": 1988.24,
+      "text": "There is a big area,",
+      "timestamp_label": "33:06"
+    },
+    {
+      "id": 874,
+      "start": 1988.24,
+      "end": 1990.24,
+      "text": "it has two pieces of it.",
+      "timestamp_label": "33:08"
+    },
+    {
+      "id": 875,
+      "start": 1990.24,
+      "end": 1992.24,
+      "text": "Suppose it is of eight sizes.",
+      "timestamp_label": "33:10"
+    },
+    {
+      "id": 876,
+      "start": 1992.24,
+      "end": 1994.24,
+      "text": "You have cut it in four pieces.",
+      "timestamp_label": "33:12"
+    },
+    {
+      "id": 877,
+      "start": 1994.24,
+      "end": 1996.24,
+      "text": "Then you have cut it in two pieces.",
+      "timestamp_label": "33:14"
+    },
+    {
+      "id": 878,
+      "start": 1996.24,
+      "end": 1998.24,
+      "text": "Then you have cut it in one piece.",
+      "timestamp_label": "33:16"
+    },
+    {
+      "id": 879,
+      "start": 1998.24,
+      "end": 2000.24,
+      "text": "Okay. You have cut it in one piece.",
+      "timestamp_label": "33:18"
+    },
+    {
+      "id": 880,
+      "start": 2000.24,
+      "end": 2002.24,
+      "text": "This merge is done.",
+      "timestamp_label": "33:20"
+    },
+    {
+      "id": 881,
+      "start": 2002.24,
+      "end": 2004.24,
+      "text": "This merge is done.",
+      "timestamp_label": "33:22"
+    },
+    {
+      "id": 882,
+      "start": 2004.24,
+      "end": 2006.24,
+      "text": "Then these two merge.",
+      "timestamp_label": "33:24"
+    },
+    {
+      "id": 883,
+      "start": 2006.24,
+      "end": 2008.24,
+      "text": "Then it will merge from below.",
+      "timestamp_label": "33:26"
+    },
+    {
+      "id": 884,
+      "start": 2008.24,
+      "end": 2010.24,
+      "text": "Then these two merge again.",
+      "timestamp_label": "33:28"
+    },
+    {
+      "id": 885,
+      "start": 2010.24,
+      "end": 2012.24,
+      "text": "Okay. I hope you understand this.",
+      "timestamp_label": "33:30"
+    },
+    {
+      "id": 886,
+      "start": 2012.24,
+      "end": 2014.24,
+      "text": "You must try to code it yourself.",
+      "timestamp_label": "33:32"
+    },
+    {
+      "id": 887,
+      "start": 2014.24,
+      "end": 2016.24,
+      "text": "And see how the intermediate",
+      "timestamp_label": "33:34"
+    },
+    {
+      "id": 888,
+      "start": 2016.24,
+      "end": 2018.24,
+      "text": "merge arrays are showing.",
+      "timestamp_label": "33:36"
+    },
+    {
+      "id": 889,
+      "start": 2018.24,
+      "end": 2020.24,
+      "text": "If you do this, then you have a good idea",
+      "timestamp_label": "33:38"
+    },
+    {
+      "id": 890,
+      "start": 2020.24,
+      "end": 2022.24,
+      "text": "of how the merge sort works.",
+      "timestamp_label": "33:40"
+    },
+    {
+      "id": 891,
+      "start": 2022.24,
+      "end": 2024.24,
+      "text": "Once I do a revision of the merge procedure,",
+      "timestamp_label": "33:42"
+    },
+    {
+      "id": 892,
+      "start": 2024.24,
+      "end": 2026.24,
+      "text": "then what you did is,",
+      "timestamp_label": "33:44"
+    },
+    {
+      "id": 893,
+      "start": 2026.24,
+      "end": 2028.24,
+      "text": "you knew the arrays sorted",
+      "timestamp_label": "33:46"
+    },
+    {
+      "id": 894,
+      "start": 2028.24,
+      "end": 2030.24,
+      "text": "from low and mid.",
+      "timestamp_label": "33:48"
+    },
+    {
+      "id": 895,
+      "start": 2030.24,
+      "end": 2032.24,
+      "text": "And you knew the arrays sorted from mid plus one and high.",
+      "timestamp_label": "33:50"
+    },
+    {
+      "id": 896,
+      "start": 2032.24,
+      "end": 2034.24,
+      "text": "So you made these arrays",
+      "timestamp_label": "33:52"
+    },
+    {
+      "id": 897,
+      "start": 2034.24,
+      "end": 2036.24,
+      "text": "a new array of merge.",
+      "timestamp_label": "33:54"
+    },
+    {
+      "id": 898,
+      "start": 2036.24,
+      "end": 2038.24,
+      "text": "And you copied all the new arrays",
+      "timestamp_label": "33:56"
+    },
+    {
+      "id": 899,
+      "start": 2038.24,
+      "end": 2040.24,
+      "text": "in the same array.",
+      "timestamp_label": "33:58"
+    },
+    {
+      "id": 900,
+      "start": 2040.24,
+      "end": 2042.24,
+      "text": "You did this much. You didn't do much.",
+      "timestamp_label": "34:00"
+    },
+    {
+      "id": 901,
+      "start": 2042.24,
+      "end": 2044.24,
+      "text": "After that, you did a recursive merge sort",
+      "timestamp_label": "34:02"
+    },
+    {
+      "id": 902,
+      "start": 2044.24,
+      "end": 2046.24,
+      "text": "in a new array. And it is not necessary",
+      "timestamp_label": "34:04"
+    },
+    {
+      "id": 903,
+      "start": 2046.24,
+      "end": 2048.24,
+      "text": "that this is A.",
+      "timestamp_label": "34:06"
+    },
+    {
+      "id": 904,
+      "start": 2048.24,
+      "end": 2050.24,
+      "text": "Don't confuse them with the name of A.",
+      "timestamp_label": "34:08"
+    },
+    {
+      "id": 905,
+      "start": 2050.24,
+      "end": 2052.24,
+      "text": "This is also A. Don't confuse them like this.",
+      "timestamp_label": "34:10"
+    },
+    {
+      "id": 906,
+      "start": 2052.24,
+      "end": 2054.24,
+      "text": "I will change its name.",
+      "timestamp_label": "34:12"
+    },
+    {
+      "id": 907,
+      "start": 2054.24,
+      "end": 2056.24,
+      "text": "I will make it an R.",
+      "timestamp_label": "34:14"
+    },
+    {
+      "id": 908,
+      "start": 2056.24,
+      "end": 2058.24,
+      "text": "Or I will",
+      "timestamp_label": "34:16"
+    },
+    {
+      "id": 909,
+      "start": 2058.24,
+      "end": 2060.24,
+      "text": "do something called",
+      "timestamp_label": "34:18"
+    },
+    {
+      "id": 910,
+      "start": 2060.24,
+      "end": 2062.24,
+      "text": "X.",
+      "timestamp_label": "34:20"
+    },
+    {
+      "id": 911,
+      "start": 2062.24,
+      "end": 2064.24,
+      "text": "Okay. X.",
+      "timestamp_label": "34:22"
+    },
+    {
+      "id": 912,
+      "start": 2064.24,
+      "end": 2066.24,
+      "text": "I will make it X.",
+      "timestamp_label": "34:24"
+    },
+    {
+      "id": 913,
+      "start": 2066.24,
+      "end": 2068.24,
+      "text": "So that you don't confuse this one",
+      "timestamp_label": "34:26"
+    },
+    {
+      "id": 914,
+      "start": 2068.24,
+      "end": 2070.24,
+      "text": "and this one.",
+      "timestamp_label": "34:28"
+    },
+    {
+      "id": 915,
+      "start": 2070.24,
+      "end": 2072.24,
+      "text": "I will make it X.",
+      "timestamp_label": "34:30"
+    },
+    {
+      "id": 916,
+      "start": 2072.24,
+      "end": 2074.24,
+      "text": "I will make it X again.",
+      "timestamp_label": "34:32"
+    },
+    {
+      "id": 917,
+      "start": 2074.24,
+      "end": 2076.24,
+      "text": "X.",
+      "timestamp_label": "34:34"
+    },
+    {
+      "id": 918,
+      "start": 2076.24,
+      "end": 2078.24,
+      "text": "I hope this is clear to you.",
+      "timestamp_label": "34:36"
+    },
+    {
+      "id": 919,
+      "start": 2078.24,
+      "end": 2080.24,
+      "text": "When we write the code,",
+      "timestamp_label": "34:38"
+    },
+    {
+      "id": 920,
+      "start": 2080.24,
+      "end": 2082.24,
+      "text": "things will be more clear to you.",
+      "timestamp_label": "34:40"
+    },
+    {
+      "id": 921,
+      "start": 2082.24,
+      "end": 2084.24,
+      "text": "If you haven't",
+      "timestamp_label": "34:42"
+    },
+    {
+      "id": 922,
+      "start": 2084.24,
+      "end": 2086.24,
+      "text": "yet accessed the data structure algorithm",
+      "timestamp_label": "34:44"
+    },
+    {
+      "id": 923,
+      "start": 2086.24,
+      "end": 2088.24,
+      "text": "yet, then do it.",
+      "timestamp_label": "34:46"
+    },
+    {
+      "id": 924,
+      "start": 2088.24,
+      "end": 2090.24,
+      "text": "And bookmark the playlist.",
+      "timestamp_label": "34:48"
+    },
+    {
+      "id": 925,
+      "start": 2090.24,
+      "end": 2092.24,
+      "text": "And also,",
+      "timestamp_label": "34:50"
+    },
+    {
+      "id": 926,
+      "start": 2092.24,
+      "end": 2094.24,
+      "text": "you can see",
+      "timestamp_label": "34:52"
+    },
+    {
+      "id": 927,
+      "start": 2094.24,
+      "end": 2096.24,
+      "text": "the other algorithms.",
+      "timestamp_label": "34:54"
+    },
+    {
+      "id": 928,
+      "start": 2096.24,
+      "end": 2098.24,
+      "text": "I have already covered",
+      "timestamp_label": "34:56"
+    },
+    {
+      "id": 929,
+      "start": 2098.24,
+      "end": 2100.24,
+      "text": "the bubbles, insertions, selections",
+      "timestamp_label": "34:58"
+    },
+    {
+      "id": 930,
+      "start": 2100.24,
+      "end": 2102.24,
+      "text": "and quicksort.",
+      "timestamp_label": "35:00"
+    },
+    {
+      "id": 931,
+      "start": 2102.24,
+      "end": 2104.24,
+      "text": "And also, the criteria",
+      "timestamp_label": "35:02"
+    },
+    {
+      "id": 932,
+      "start": 2104.24,
+      "end": 2106.24,
+      "text": "for sorting algorithm analysis.",
+      "timestamp_label": "35:04"
+    },
+    {
+      "id": 933,
+      "start": 2106.24,
+      "end": 2108.24,
+      "text": "I have covered this.",
+      "timestamp_label": "35:06"
+    },
+    {
+      "id": 934,
+      "start": 2108.24,
+      "end": 2110.24,
+      "text": "So I hope you have understood",
+      "timestamp_label": "35:08"
+    },
+    {
+      "id": 935,
+      "start": 2110.24,
+      "end": 2112.24,
+      "text": "this.",
+      "timestamp_label": "35:10"
+    },
+    {
+      "id": 936,
+      "start": 2112.24,
+      "end": 2114.24,
+      "text": "Thank you so much for watching this video.",
+      "timestamp_label": "35:12"
+    },
+    {
+      "id": 937,
+      "start": 2114.24,
+      "end": 2116.24,
+      "text": "And I will see you next time.",
+      "timestamp_label": "35:14"
+    },
+    {
+      "id": 938,
+      "start": 2124.24,
+      "end": 2126.24,
+      "text": "Bye.",
+      "timestamp_label": "35:24"
+    }
+  ]
+}

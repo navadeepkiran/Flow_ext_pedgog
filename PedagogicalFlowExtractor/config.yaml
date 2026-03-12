@@ -1,0 +1,52 @@
+# Pedagogical Knowledge Graph Extractor - Configuration
+
+whisper:
+  model: "small"  # Options: tiny, base, small, medium, large (small=good accuracy+speed tradeoff)
+  language: null   # null = auto-detect (supports English, Hindi, Telugu, code-mixed)
+  task: "transcribe"
+
+normalizer:
+  lexicon_path: "data/hinglish_lexicon.json"
+  telugu_lexicon_path: "data/telugu_english_lexicon.json"
+  preserve_technical_terms: true
+
+extractor:
+  concepts_path: "data/cs_concepts.json"
+  min_concept_score: 0.15
+  use_rake: true
+  use_domain_dict: true
+  # Weights for hybrid scoring (must sum to 1.0)
+  weights:
+    domain_match: 0.5
+    rake: 0.3
+    frequency: 0.2
+
+detector:
+  min_confidence: 0.4
+
+graph:
+  layout: "hierarchical"  # hierarchical, force, circular
+
+visualization:
+  width: "100%"
+  height: "700px"
+  bgcolor: "#ffffff"
+  font_color: "#000000"
+  node_colors:
+    easy: "#4CAF50"
+    medium: "#FF9800"
+    hard: "#F44336"
+    default: "#2196F3"
+
+output:
+  json_dir: "outputs/json"
+  graph_dir: "outputs/graphs"
+  report_dir: "outputs/reports"
+
+# LLM-powered extraction (Groq API - free tier)
+# Get your free API key at: https://console.groq.com/keys
+# Set GROQ_API_KEY in your .env file
+llm:
+  api_key: ${GROQ_API_KEY}  # Read from environment variable
+  model: "llama-3.3-70b-versatile"  # Best quality. Alt: llama-3.1-8b-instant (faster)
+  max_tokens: 8192

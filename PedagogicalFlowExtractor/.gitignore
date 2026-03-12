@@ -1,0 +1,63 @@
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+*.env
+config_local.yaml
+
+# API Keys (if accidentally created)
+*api_key*
+*secret*
+*groq_key*
+*openai_key*
+
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data files (large)
+data/raw_videos/*.mp4
+data/raw_videos/*.mkv
+data/raw_videos/*.webm
+data/raw_videos/*.avi
+
+# Outputs
+outputs/graphs/*.html
+outputs/json/*.json
+outputs/reports/*.log
+
+# Test files
+test_*.py
+test_*.mp4
+test_*.mkv
+*.sh
+
+# Evaluation
+evaluate.py
+evaluation_results.json
+check_*.py
+
+# Colab & Deployment
+*.zip
+*.tar.gz
+colab_config.yaml
+
+# Misc
+*.egg-info/
+dist/
+build/
