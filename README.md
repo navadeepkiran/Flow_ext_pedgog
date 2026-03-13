@@ -1,4 +1,7 @@
 # 🎓 Pedagogical Knowledge Graph Extractor
+### 📂 Google Drive — All Outputs
+
+**[📁 View All Video Outputs on Google Drive](https://drive.google.com/drive/folders/1OsHUFPUKO1nrj10ChS3uKDVBH0SxNb3o?usp=sharing)**
 
 > **Converting unstructured multilingual educational discourse into structured pedagogical knowledge graphs.**
 
