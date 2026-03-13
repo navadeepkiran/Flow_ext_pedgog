@@ -7,25 +7,7 @@
 
 An intelligent system that processes code-mixed (Hinglish & Tenglish) educational videos, extracts key academic concepts, detects prerequisite relationships, and outputs an interactive knowledge graph — enabling automated curriculum sequencing and learning path optimization.
 
----
 
-## 📋 Table of Contents
-
-- [Setup & Installation](#-setup--installation)
-- [How to Run](#-how-to-run)
-- [Google Colab (GPU)](#-google-colab-gpu)
-- [Sample Videos & Outputs](#-sample-videos--outputs)
-- [Key Features](#-key-features)
-- [Architecture](#-architecture)
-- [Project Structure](#-project-structure)
-- [Pipeline Modes](#-pipeline-modes)
-- [Output Format](#-output-format)
-- [Configuration](#-configuration)
-- [Evaluation Suite](#-evaluation-suite)
-- [Innovation Highlights](#-innovation-highlights)
-- [Acknowledgments](#-acknowledgments)
-
----
 
 ## 🛠️ Setup & Installation
 
@@ -460,20 +442,3 @@ python evaluate.py --mode both --verbose --save
 
 6. **Interactive Knowledge Graphs** — Dark-themed PyVis graphs with community coloring, importance-based sizing, custom hover tooltips, and directional prerequisite edges
 
----
-
-## 📜 License
-
-MIT License
-
----
-
-## 🙏 Acknowledgments
-
-- [OpenAI Whisper](https://github.com/openai/whisper) — Speech recognition
-- [Groq](https://groq.com/) — Fast LLM inference API
-- [NetworkX](https://networkx.org/) — Graph algorithms & analytics
-- [PyVis](https://pyvis.readthedocs.io/) — Interactive graph visualization
-- [Streamlit](https://streamlit.io/) — Web dashboard framework
-- [RAKE-NLTK](https://github.com/csurfer/rake-nltk) — Keyword extraction
-- [sentence-transformers](https://www.sbert.net/) — Semantic concept deduplication
