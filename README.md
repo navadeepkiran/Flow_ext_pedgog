@@ -172,13 +172,13 @@ Contains: knowledge graph HTML files, JSON outputs, transcripts, and graphs for 
 
 ### 🎥 YouTube Video Links
 
-| # | Video | YouTube Link |
-|---|-------|-------------|
-| 1 | Video 1 | [https://www.youtube.com/watch?v=t9MJ1gxcJ4w](https://www.youtube.com/watch?v=t9MJ1gxcJ4w) |
-| 2 | Video 2 | [https://www.youtube.com/watch?v=65ybTFOurZE](https://www.youtube.com/watch?v=65ybTFOurZE) |
-| 3 | Video 3 | [https://www.youtube.com/watch?v=VZou5pYcWXM](https://www.youtube.com/watch?v=VZou5pYcWXM) |
-| 4 | Video 4 | [https://www.youtube.com/watch?v=63HJ2-jV6Mk](https://www.youtube.com/watch?v=63HJ2-jV6Mk&list=PLnccP3XNVxGrWkKFJMCtL5mDEcOnrjjib&index=9) |
-| 5 | Video 5 | [https://www.youtube.com/watch?v=p_r42RVY-pA](https://www.youtube.com/watch?v=p_r42RVY-pA) |
+| # | Video | Code-Mixed Language | YouTube Link |
+|---|-------|-------------------|-------------|
+| 1 | Video 1 | **Hindi-English (Hinglish)** | [https://www.youtube.com/watch?v=t9MJ1gxcJ4w](https://www.youtube.com/watch?v=t9MJ1gxcJ4w) |
+| 2 | Video 2 | **Hindi-English (Hinglish)** | [https://www.youtube.com/watch?v=65ybTFOurZE](https://www.youtube.com/watch?v=65ybTFOurZE) |
+| 3 | Video 3 | **Hindi-English (Hinglish)** | [https://www.youtube.com/watch?v=VZou5pYcWXM](https://www.youtube.com/watch?v=VZou5pYcWXM) |
+| 4 | Video 4 | **Hindi-English (Hinglish)** | [https://www.youtube.com/watch?v=63HJ2-jV6Mk](https://www.youtube.com/watch?v=63HJ2-jV6Mk&list=PLnccP3XNVxGrWkKFJMCtL5mDEcOnrjjib&index=9) |
+| 5 | Video 5 | **Hindi-English (Hinglish)** | [https://www.youtube.com/watch?v=p_r42RVY-pA](https://www.youtube.com/watch?v=p_r42RVY-pA) |
 
 ---
 
